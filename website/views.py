@@ -2,8 +2,14 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
+    page_title = "Home"
 
-    return render(request, "home.html")
+    Context = {
+        "page_title": page_title,
+
+    }
+
+    return render(request, "home.html", Context)
 
 def about(request):
 
@@ -12,8 +18,8 @@ def about(request):
 def contact(request):
     return render(request, "contact.html")
 
-def services(request):
-    return render(request, "services.html")
+def explore(request):
+    return render(request, "explore.html")
 
 def blog(request):
     return render(request, "blog.html")
