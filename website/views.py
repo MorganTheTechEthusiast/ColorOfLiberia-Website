@@ -32,3 +32,6 @@ def blog_detail(request, post_id):
 def faq(request):
     return render(request, "faq.html")
 
+def business_details(request):
+    return render(request, "business_details.html")
+
