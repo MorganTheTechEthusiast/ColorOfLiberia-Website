@@ -1,0 +1,1106 @@
+{% extends 'components/base.html' %} {% load static %} {% block title %} {{
+page_title }} {% endblock %} {% block content %}
+
+<!-- #page-title start -->
+<div id="page-title" class="page-title page-title-style-background">
+  <div class="container">
+    <div class="h-100 d-flex align-items-center">
+      <div class="mb-2">
+        <h1 class="mb-0" data-animate="fadeInDown">
+          <span>Some </span>
+          <span class="font-weight-light">Tips & Articles</span>
+        </h1>
+        <ul class="breadcrumb breadcrumb-style-01" data-animate="fadeInUp">
+          <li class="breadcrumb-item">
+            <a href="#" class="link-hover-dark-primary">Home</a>
+          </li>
+          <li class="breadcrumb-item"><span>Blog</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #page-title end -->
+
+<!-- #wrapper-content start -->
+<div id="wrapper-content" class="wrapper-content">
+  <div class="container">
+    <div class="page-container">
+      <ul
+        class="nav nav-pills tab-style-01 text-capitalize font-size-lg text-dark"
+        role="tablist"
+      >
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="all-tab"
+            data-toggle="tab"
+            href="#all"
+            role="tab"
+            aria-controls="all"
+            aria-selected="true"
+            >all</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="culture-tab"
+            data-toggle="tab"
+            href="#culture"
+            role="tab"
+            aria-controls="culture"
+            aria-selected="false"
+          >
+            Culture
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="travel-tab"
+            data-toggle="tab"
+            href="#travel"
+            role="tab"
+            aria-controls="travel"
+            aria-selected="false"
+            >travel</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="location-tab"
+            data-toggle="tab"
+            href="#location"
+            role="tab"
+            aria-controls="location"
+            aria-selected="false"
+            >location
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="tips-tab"
+            data-toggle="tab"
+            href="#tips"
+            role="tab"
+            aria-controls="tips"
+            aria-selected="false"
+            >tips
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="community-tab"
+            data-toggle="tab"
+            href="#community"
+            role="tab"
+            aria-controls="community"
+            aria-selected="false"
+            >community
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="entertainment-tab"
+            data-toggle="tab"
+            href="#entertainment"
+            role="tab"
+            aria-controls="entertainment"
+            aria-selected="false"
+            >entertainment
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div
+          class="tab-pane fade show active"
+          id="all"
+          role="tabpanel"
+          aria-labelledby="all"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-2.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Tips</a>,
+                    <a href="#" class="link-hover-dark-primary">Travel</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                    >
+                      10 best homestay in florencia that you don't miss out</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 28th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-3.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Culture</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Coffee On Street & Look Super Car</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 25th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">David</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-1.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary"
+                      >MadCap Coffee At Brooklyn Town For Who Love Black
+                      Coffee</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 19th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-4.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Happy Cooker - A Place To Check-In When Visit Italy</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 16th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-5.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location,</a>
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Connect Anyone That You Want At Coffee Talk Event</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 07th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Chris Evan</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="post card border-0">
+                <a
+                  href="blog-single-image.html"
+                  class="feature-image hover-scale"
+                >
+                  <img
+                    src="/static/images/blog/blog-6.jpg"
+                    alt="Post 6"
+                    class="card-img-top image"
+                  />
+                  <div class="image-content media">
+                    <span><i class="fas fa-video"></i></span>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Tips,</a>
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Great Experience At MiFost Villa</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 26th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary"
+                        >Hilary Kreton</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="card border-0 post">
+                <div class="feature-image">
+                  <div
+                    class="slick-slider"
+                    data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false}'
+                  >
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html"
+                        ><img
+                          src="/static/images/blog/blog-7.jpg"
+                          alt="Post 7"
+                          class="image"
+                      /></a>
+                    </div>
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html">
+                        <img
+                          src="/static/images/blog/blog-7-1.jpg"
+                          alt="Post 7"
+                          class="image"
+                        />
+                      </a>
+                    </div>
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html">
+                        <img
+                          src="/static/images/blog/blog-7-2.jpg"
+                          alt="Post 7"
+                          class="image"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Travel</a>,
+                    <a href="#" class="link-hover-dark-primary">Culture</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Discover Venice, Italy</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 18th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="post card border-0">
+                <a
+                  href="blog-single-image.html"
+                  class="feature-image hover-scale"
+                >
+                  <img
+                    src="/static/images/blog/blog-8.jpg"
+                    alt="product 1"
+                    class="image"
+                  />
+                  <div class="image-content media">
+                    <span><i class="fas fa-volume-up"></i></span>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary"
+                      >Art Exhibition 2017 At Florencia, Are You Ready?
+                    </a>
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 15th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-9.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                    >
+                      Wonderful Momment That You Never Get At Snowy HomeStay
+                    </a>
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 19th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="pagination pagination-style-01 mt-9 pb-8">
+            <li class="page-item">
+              <a href="#" class="page-link current">1</a>
+            </li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">4</a></li>
+            <li class="page-item">
+              <a href="#" class="page-link"
+                ><i class="fal fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="culture"
+          role="tabpanel"
+          aria-labelledby="culture"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-3.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Culture</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Coffee On Street & Look Super Car</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 25th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">David</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="card border-0 post">
+                <div class="feature-image">
+                  <div
+                    class="slick-slider"
+                    data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false}'
+                  >
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html"
+                        ><img
+                          src="/static/images/blog/blog-7.jpg"
+                          alt="Post 7"
+                          class="image"
+                      /></a>
+                    </div>
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html">
+                        <img
+                          src="/static/images/blog/blog-7-1.jpg"
+                          alt="Post 7"
+                          class="image"
+                        />
+                      </a>
+                    </div>
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html">
+                        <img
+                          src="/static/images/blog/blog-7-2.jpg"
+                          alt="Post 7"
+                          class="image"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Travel</a>,
+                    <a href="#" class="link-hover-dark-primary">Culture</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Discover Venice, Italy</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 18th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="travel"
+          role="tabpanel"
+          aria-labelledby="travel"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-2.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Tips</a>,
+                    <a href="#" class="link-hover-dark-primary">Travel</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                    >
+                      10 best homestay in florencia that you don't miss out</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 28th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="card border-0 post">
+                <div class="feature-image">
+                  <div
+                    class="slick-slider"
+                    data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false}'
+                  >
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html"
+                        ><img
+                          src="/static/images/blog/blog-7.jpg"
+                          alt="Post 7"
+                          class="image"
+                      /></a>
+                    </div>
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html">
+                        <img
+                          src="/static/images/blog/blog-7-1.jpg"
+                          alt="Post 7"
+                          class="image"
+                        />
+                      </a>
+                    </div>
+                    <div class="box hover-scale">
+                      <a href="blog-single-image.html">
+                        <img
+                          src="/static/images/blog/blog-7-2.jpg"
+                          alt="Post 7"
+                          class="image"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Travel</a>,
+                    <a href="#" class="link-hover-dark-primary">Culture</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Discover Venice, Italy</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 18th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="location"
+          role="tabpanel"
+          aria-labelledby="location"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-1.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary"
+                      >MadCap Coffee At Brooklyn Town For Who Love Black
+                      Coffee</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 19th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-4.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Happy Cooker - A Place To Check-In When Visit Italy</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 16th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-5.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location,</a>
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Connect Anyone That You Want At Coffee Talk Event</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 07th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Chris Evan</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="post card border-0">
+                <a
+                  href="blog-single-image.html"
+                  class="feature-image hover-scale"
+                >
+                  <img
+                    src="/static/images/blog/blog-6.jpg"
+                    alt="Post 6"
+                    class="card-img-top image"
+                  />
+                  <div class="image-content media">
+                    <span><i class="fas fa-video"></i></span>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Tips,</a>
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Great Experience At MiFost Villa</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 26th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary"
+                        >Hilary Kreton</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-9.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                    >
+                      Wonderful Momment That You Never Get At Snowy HomeStay
+                    </a>
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 19th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tips"
+          role="tabpanel"
+          aria-labelledby="tips"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/main-blog-2.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Tips</a>,
+                    <a href="#" class="link-hover-dark-primary">Travel</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                    >
+                      10 best homestay in florencia that you don't miss out</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 28th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="post card border-0">
+                <a
+                  href="blog-single-image.html"
+                  class="feature-image hover-scale"
+                >
+                  <img
+                    src="/static/images/blog/blog-6.jpg"
+                    alt="Post 6"
+                    class="card-img-top image"
+                  />
+                  <div class="image-content media">
+                    <span><i class="fas fa-video"></i></span>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Tips,</a>
+                    <a href="#" class="link-hover-dark-primary">Location</a>
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Great Experience At MiFost Villa</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 26th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary"
+                        >Hilary Kreton</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="community"
+          role="tabpanel"
+          aria-labelledby="community"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-5.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location,</a>
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Connect Anyone That You Want At Coffee Talk Event</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 07th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Chris Evan</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="post card border-0">
+                <a
+                  href="blog-single-image.html"
+                  class="feature-image hover-scale"
+                >
+                  <img
+                    src="/static/images/blog/blog-8.jpg"
+                    alt="product 1"
+                    class="image"
+                  />
+                  <div class="image-content media">
+                    <span><i class="fas fa-volume-up"></i></span>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary"
+                      >Art Exhibition 2017 At Florencia, Are You Ready?
+                    </a>
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 15th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="entertainment"
+          role="tabpanel"
+          aria-labelledby="entertainment"
+        >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-6">
+              <div class="card border-0">
+                <a href="blog-single-image.html" class="hover-scale">
+                  <img
+                    src="/static/images/blog/blog-5.jpg"
+                    alt="product 1"
+                    class="card-img-top image"
+                  />
+                </a>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Location,</a>
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary text-capitalize"
+                      >Connect Anyone That You Want At Coffee Talk Event</a
+                    >
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Aug 07th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">Chris Evan</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-8 mb-md-0">
+              <div class="post card border-0">
+                <div class="feature-image">
+                  <a href="blog-single-image.html" class="hover-scale">
+                    <img
+                      src="/static/images/blog/blog-8.jpg"
+                      alt="product 1"
+                      class="image"
+                    />
+                  </a>
+                  <div class="image-content media">
+                    <span><i class="fas fa-volume-up"></i></span>
+                  </div>
+                </div>
+                <div class="card-body px-0">
+                  <div class="mb-2">
+                    <a href="#" class="link-hover-dark-primary">Community,</a>
+                    <a href="#" class="link-hover-dark-primary"
+                      >Entertainment</a
+                    >
+                  </div>
+                  <h5 class="card-title lh-13 letter-spacing-25">
+                    <a
+                      href="blog-single-image.html"
+                      class="link-hover-dark-primary"
+                      >Art Exhibition 2017 At Florencia, Are You Ready?
+                    </a>
+                  </h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mr-0">
+                      <span class="text-gray">Jul 15th, 2017 by</span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="link-hover-dark-primary">LoganCee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #wrapper-content end -->
+
+{% endblock %}

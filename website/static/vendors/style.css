@@ -16766,7 +16766,7 @@ iframe {
 
 .explore-details-full-image .image {
   height: 680px;
-  background-image: url("images/banner/image-1.jpg");
+  background-image: url("/static/images/banner/image-1.jpg");
   background-size: cover;
   background-position: center; }
   @media (max-width: 1199.98px) {
