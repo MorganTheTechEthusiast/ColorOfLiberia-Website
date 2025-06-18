@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 def home(request):
@@ -19,7 +20,13 @@ def contact(request):
     return render(request, "contact.html")
 
 def explore(request):
-    return render(request, "explore.html")
+    all_businesses = Business.objects.prefetch_related('media')
+
+    context = {
+        "all_businesses": all_businesses,
+        "page_title": "Explore Businesses",
+    }
+    return render(request, "explore.html", context)
 
 def blog(request):
     return render(request, "blog.html")
