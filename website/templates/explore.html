@@ -42,38 +42,17 @@ page_title }} {% endblock %} {% block content %}
             <div class="form-search form-search-style-03">
               <div class="form-group">
                 <div class="input-group d-flex align-items-center">
-                  <label
-                    for="what"
-                    class="input-group-prepend text-dark font-weight-semibold"
-                    >What</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control bg-transparent"
-                    id="what"
-                    placeholder="Any keywords..."
-                  />
+                  <label for="what" class="input-group-prepend text-dark font-weight-semibold">What</label>
+                  <input type="text" class="form-control bg-transparent" id="what" placeholder="Any keywords..." />
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group d-flex align-items-center">
-                  <label
-                    for="where"
-                    class="input-group-prepend text-dark font-weight-semibold"
-                    >Where</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control bg-transparent"
-                    id="where"
-                    placeholder="City, postcode..."
-                  />
+                  <label for="where" class="input-group-prepend text-dark font-weight-semibold">Where</label>
+                  <input type="text" class="form-control bg-transparent" id="where" placeholder="City, postcode..." />
                 </div>
               </div>
-              <button
-                type="submit"
-                class="btn btn-primary btn-block btn-icon-left font-size-md"
-              >
+              <button type="submit" class="btn btn-primary btn-block btn-icon-left font-size-md">
                 <i class="fal fa-search"></i>
                 Search
               </button>
@@ -98,149 +77,87 @@ page_title }} {% endblock %} {% block content %}
                 </div>
                 <div class="form-group price-range">
                   <label class="form-label"> Price Range </label>
-                  <div
-                    id="price"
-                    data-slider="true"
-                    data-slider-options='{"min":0,"max":4000,"values":[0,2000]}'
-                  ></div>
+                  <div id="price" data-slider="true" data-slider-options='{"min":0,"max":4000,"values":[0,2000]}'></div>
                   <div class="description">
                     From <input type="text" readonly class="amount border-0" />
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input
-                      type="text"
-                      value="Open Now"
-                      class="form-control bg-transparent"
-                    />
-                    <span class="input-group-append"
-                      ><i class="fal fa-clock"></i
-                    ></span>
+                    <input type="text" value="Open Now" class="form-control bg-transparent" />
+                    <span class="input-group-append"><i class="fal fa-clock"></i></span>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input
-                      type="text"
-                      value="Highest Rated"
-                      class="form-control bg-transparent"
-                    />
-                    <span class="input-group-append"
-                      ><i class="fas fa-star"></i
-                    ></span>
+                    <input type="text" value="Highest Rated" class="form-control bg-transparent" />
+                    <span class="input-group-append"><i class="fas fa-star"></i></span>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="input-group">
-                    <input
-                      type="text"
-                      value="Most Reviewed"
-                      class="form-control bg-transparent"
-                    />
-                    <span class="input-group-append"
-                      ><i class="fal fa-comment"></i
-                    ></span>
+                    <input type="text" value="Most Reviewed" class="form-control bg-transparent" />
+                    <span class="input-group-append"><i class="fal fa-comment"></i></span>
                   </div>
                 </div>
                 <div class="form-group filter-tags">
                   <label class="form-label">Filter by tags</label>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="electronics"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="electronics" />
                     <label class="custom-control-label" for="electronics">
                       Design
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="books"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="books" />
                     <label class="custom-control-label" for="books">
                       Developer
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="fashion"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="fashion" />
                     <label class="custom-control-label" for="fashion">
                       Programer
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="vintage"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="vintage" />
                     <label class="custom-control-label" for="vintage">
                       Consulting
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="gift"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="gift" />
                     <label class="custom-control-label" for="gift">
                       Accounting
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="furniture"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="furniture" />
                     <label class="custom-control-label" for="furniture">
                       Transporter
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="women-clothing"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="women-clothing" />
                     <label class="custom-control-label" for="women-clothing">
                       Technology
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="men-clothing"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="men-clothing" />
                     <label class="custom-control-label" for="men-clothing">
                       Waiter
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="shoes"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="shoes" />
                     <label class="custom-control-label" for="shoes">
                       Intership
                     </label>
                   </div>
                   <div class="custom-control custom-checkbox lh-19">
-                    <input
-                      class="custom-control-input"
-                      type="checkbox"
-                      id="jewelry"
-                    />
+                    <input class="custom-control-input" type="checkbox" id="jewelry" />
                     <label class="custom-control-label" for="jewelry">
                       Controllers
                     </label>
@@ -261,11 +178,7 @@ page_title }} {% endblock %} {% block content %}
           </div>
           <div class="form-filter d-flex align-items-center ml-auto">
             <div class="form-group row no-gutters align-items-center">
-              <label
-                for="sort-by"
-                class="col-sm-3 text-dark font-size-md font-weight-semibold mb-0"
-                >Sort by</label
-              >
+              <label for="sort-by" class="col-sm-3 text-dark font-size-md font-weight-semibold mb-0">Sort by</label>
               <div class="select-custom col-sm-9 bg-white">
                 <select id="sort-by" class="form-control bg-transparent">
                   <option value="0">Latest</option>
@@ -285,64 +198,39 @@ page_title }} {% endblock %} {% block content %}
           {% for item in all_businesses %}
           <div class="mb-6">
             <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                {%
-                with
-                item.media.all.0
-                as
-                media
-                %}
-                style="background-image: url('{% if media.logo %}{{ media.logo.url }}{% else %}/static/images/shop/jobs-shop-1.jpg{% endif %}');"
-                {%
-                endwith
-                %}
-              >
+              <a href="listing-details-full-image.html" class="store-image" {% with item.media.all.0 as media %}
+                style="background-image: url('{% if media.logo %}{{ media.logo.url }}{% else %}/static/images/shop/jobs-shop-1.jpg{% endif %}');
+                      object-fit: contain;"
+                {% endwith %}>
               </a>
               <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
                 <div class="d-flex align-items-center lh-1">
                   <span class="text-gray">{{item.category.name}}</span>
-                  <span class="favourite ml-auto text-danger"
-                    ><i class="fas fa-heart"></i
-                  ></span>
+                  <span class="favourite ml-auto text-danger"><i class="fas fa-heart"></i></span>
                 </div>
 
-                <a
-                  href="{% url 'business_details' %}"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25">{{item.name}}</span>
+                <a href="{% url 'business_details' %}" class="h5 text-dark d-inline-block store-name"><span
+                    class="letter-spacing-25">{{item.name}}</span>
                 </a>
                 <div class="row mb-3">
                   <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >{{item.address}}, {{item.city}}</span
-                    >
+                    <i class="fal fa-map-marker-alt"></i><span class="d-inline-block ml-2">{{item.address}},
+                      {{item.city}}</span>
                   </div>
                   <div class="col-lg-6">
                     <i class="fal fa-briefcase"></i>
                     {% if item.is_verified %}
-                    <span class="d-inline-block ml-2 text-success"
-                      >Verified</span
-                    >
+                    <span class="d-inline-block ml-2 text-success">Verified</span>
                     {% else %}
-                    <span class="d-inline-block ml-2 text-warning"
-                      >Unverified</span
-                    >
+                    <span class="d-inline-block ml-2 text-warning">Unverified</span>
                     {% endif %}
                   </div>
                   <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i
-                    ><span class="d-inline-block ml-2 text-danger"
-                      >$500.00 - $1,000.00</span
-                    >
+                    <i class="fal fa-sack-dollar"></i><span class="d-inline-block ml-2 text-danger">$500.00 -
+                      $1,000.00</span>
                   </div>
                   <div class="col-lg-6">
-                    <i class="fal fa-clock"></i
-                    ><span class="d-inline-block ml-2"
-                      >Posted {{item.created_at}}</span
-                    >
+                    <i class="fal fa-clock"></i><span class="d-inline-block ml-2">Posted {{item.created_at}}</span>
                   </div>
                 </div>
                 <!-- <div class="border-top pt-2 px-0 pb-0">
@@ -356,10 +244,7 @@ page_title }} {% endblock %} {% block content %}
         </div>
         <!--BusinessListing Ends -->
         <div class="pagination">
-          <a
-            href="#"
-            class="btn btn-lg btn-dark-red btn-block font-size-h5 lh-18"
-          >
+          <a href="#" class="btn btn-lg btn-dark-red btn-block font-size-h5 lh-18">
             More Results...48/56
           </a>
         </div>
@@ -375,29 +260,19 @@ page_title }} {% endblock %} {% block content %}
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="store media align-items-stretch bg-white px-4">
             <a href="listing-details-full-image.html" class="store-image">
-              <img
-                src="/static/images/shop/job-recent-view-1.jpg"
-                alt="Job recent view 1"
-              />
+              <img src="/static/images/shop/job-recent-view-1.jpg" alt="Job recent view 1" />
             </a>
             <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-              <a
-                href="listing-details-full-image.html"
-                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"
-                ><span class="letter-spacing-25"
-                  >Senior Visual Product Designer</span
-                >
+              <a href="listing-details-full-image.html"
+                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
+                  class="letter-spacing-25">Senior Visual Product Designer</span>
               </a>
               <div class="row mb-3">
                 <div class="col-12">
-                  <i class="fal fa-map-marker-alt"></i
-                  ><span class="d-inline-block ml-2"
-                    >77 Main St, Queen, NY</span
-                  >
+                  <i class="fal fa-map-marker-alt"></i><span class="d-inline-block ml-2">77 Main St, Queen, NY</span>
                 </div>
                 <div class="col-12">
-                  <i class="fal fa-briefcase"></i
-                  ><span class="d-inline-block ml-2 text-link">Freelancer</span>
+                  <i class="fal fa-briefcase"></i><span class="d-inline-block ml-2 text-link">Freelancer</span>
                 </div>
               </div>
             </div>
@@ -406,27 +281,19 @@ page_title }} {% endblock %} {% block content %}
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="store media align-items-stretch bg-white px-4">
             <a href="listing-details-full-image.html" class="store-image">
-              <img
-                src="/static/images/shop/job-recent-view-2.jpg"
-                alt="Job recent view 2"
-              />
+              <img src="/static/images/shop/job-recent-view-2.jpg" alt="Job recent view 2" />
             </a>
             <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-              <a
-                href="listing-details-full-image.html"
-                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"
-                ><span class="letter-spacing-25">Android Developer</span>
+              <a href="listing-details-full-image.html"
+                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
+                  class="letter-spacing-25">Android Developer</span>
               </a>
               <div class="row mb-3">
                 <div class="col-12">
-                  <i class="fal fa-map-marker-alt"></i
-                  ><span class="d-inline-block ml-2"
-                    >77 Main St, Queen, NY</span
-                  >
+                  <i class="fal fa-map-marker-alt"></i><span class="d-inline-block ml-2">77 Main St, Queen, NY</span>
                 </div>
                 <div class="col-12">
-                  <i class="fal fa-briefcase"></i
-                  ><span class="d-inline-block ml-2 text-link">Full Time</span>
+                  <i class="fal fa-briefcase"></i><span class="d-inline-block ml-2 text-link">Full Time</span>
                 </div>
               </div>
             </div>
@@ -435,29 +302,19 @@ page_title }} {% endblock %} {% block content %}
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="store media align-items-stretch bg-white px-4">
             <a href="listing-details-full-image.html" class="store-image">
-              <img
-                src="/static/images/shop/job-recent-view-3.jpg"
-                alt="Job recent view 3"
-              />
+              <img src="/static/images/shop/job-recent-view-3.jpg" alt="Job recent view 3" />
             </a>
             <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-              <a
-                href="listing-details-full-image.html"
-                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"
-                ><span class="letter-spacing-25"
-                  >Intership Finacial Consultancy</span
-                >
+              <a href="listing-details-full-image.html"
+                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
+                  class="letter-spacing-25">Intership Finacial Consultancy</span>
               </a>
               <div class="row mb-3">
                 <div class="col-12">
-                  <i class="fal fa-map-marker-alt"></i
-                  ><span class="d-inline-block ml-2"
-                    >77 Main St, Queen, NY</span
-                  >
+                  <i class="fal fa-map-marker-alt"></i><span class="d-inline-block ml-2">77 Main St, Queen, NY</span>
                 </div>
                 <div class="col-12">
-                  <i class="fal fa-briefcase"></i
-                  ><span class="d-inline-block ml-2 text-link">Intership</span>
+                  <i class="fal fa-briefcase"></i><span class="d-inline-block ml-2 text-link">Intership</span>
                 </div>
               </div>
             </div>
