@@ -1,6 +1,15 @@
 {% extends 'components/base.html' %} {% load static %} {% block title %} {{
 page_title }} {% endblock %} {% block content %}
 
+<style>
+  .text-success {
+    color: #0ce13e !important;
+  }
+
+  .text-warning {
+    color: #ffb300 !important;
+  }
+</style>
 <!-- #wrapper-content start -->
 <div id="wrapper-content" class="wrapper-content bg-gray-04 pb-0">
   <div class="container">
@@ -271,20 +280,29 @@ page_title }} {% endblock %} {% block content %}
             </div>
           </div>
         </div>
+        <!--BusinessListing Starts -->
         <div class="store-listing-style store-listing-style-02">
+          {% for item in all_businesses %}
           <div class="mb-6">
             <div class="store media align-items-stretch bg-white job-store">
               <a
                 href="listing-details-full-image.html"
                 class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-1.jpg');
-                "
+                {%
+                with
+                item.media.all.0
+                as
+                media
+                %}
+                style="background-image: url('{% if media.logo %}{{ media.logo.url }}{% else %}/static/images/shop/jobs-shop-1.jpg{% endif %}');"
+                {%
+                endwith
+                %}
               >
               </a>
               <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
                 <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">MME Studio</span>
+                  <span class="text-gray">{{item.category.name}}</span>
                   <span class="favourite ml-auto text-danger"
                     ><i class="fas fa-heart"></i
                   ></span>
@@ -293,20 +311,26 @@ page_title }} {% endblock %} {% block content %}
                 <a
                   href="{% url 'business_details' %}"
                   class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25">3D Animation Designer</span>
+                  ><span class="letter-spacing-25">{{item.name}}</span>
                 </a>
                 <div class="row mb-3">
                   <div class="col-lg-6">
                     <i class="fal fa-map-marker-alt"></i
                     ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York</span
+                      >{{item.address}}, {{item.city}}</span
                     >
                   </div>
                   <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link"
-                      >Freelancer</span
+                    <i class="fal fa-briefcase"></i>
+                    {% if item.is_verified %}
+                    <span class="d-inline-block ml-2 text-success"
+                      >Verified</span
                     >
+                    {% else %}
+                    <span class="d-inline-block ml-2 text-warning"
+                      >Unverified</span
+                    >
+                    {% endif %}
                   </div>
                   <div class="col-lg-6">
                     <i class="fal fa-sack-dollar"></i
@@ -317,346 +341,20 @@ page_title }} {% endblock %} {% block content %}
                   <div class="col-lg-6">
                     <i class="fal fa-clock"></i
                     ><span class="d-inline-block ml-2"
-                      >Posted 11 hours ago</span
+                      >Posted {{item.created_at}}</span
                     >
                   </div>
                 </div>
-                <div class="border-top pt-2 px-0 pb-0">
+                <!-- <div class="border-top pt-2 px-0 pb-0">
                   They specialize in makgeolli at this Korean-style pub in
                   Seorae Village...
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-          <div class="mb-6">
-            <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-2.jpg');
-                "
-              >
-              </a>
-              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">Wave Agency</span>
-                  <span class="favourite ml-auto text-darker-light"
-                    ><i class="fas fa-heart"></i
-                  ></span>
-                </div>
-
-                <a
-                  href="listing-details-full-image.html"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25">Account Executive</span>
-                </a>
-                <div class="row mb-2">
-                  <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link"
-                      >Part Time</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i>
-                    <span class="d-inline-block ml-2 text-danger"
-                      >$300.00 - $800.00
-                    </span>
-                  </div>
-                  <div class="col-lg-6 item">
-                    <i class="fal fa-clock"></i>
-                    <span class="d-inline-block ml-2"
-                      >Posted 22 hours ago
-                    </span>
-                  </div>
-                </div>
-                <div class="border-top pt-2 px-0 pb-0">
-                  Consulting have instructions to recruit a Company
-                  Accountant/Bookkeeper...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6">
-            <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-3.jpg');
-                "
-              >
-              </a>
-              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">ABA Logistic JSC</span>
-                  <span class="favourite ml-auto text-darker-light"
-                    ><i class="fas fa-heart"></i
-                  ></span>
-                </div>
-
-                <a
-                  href="listing-details-full-image.html"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25"
-                    >3Transport Shift Controller</span
-                  >
-                </a>
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link"
-                      >Temporary</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i>
-                    <span class="d-inline-block ml-2 text-danger"
-                      >$100.00/day</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-clock"></i>
-                    <span class="d-inline-block ml-2">Posted 1 days ago</span>
-                  </div>
-                </div>
-                <div class="border-top pt-2 px-0 pb-0">
-                  Consulting have instructions to recruit a Company
-                  Accountant/Bookkeeper...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6">
-            <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-4.jpg');
-                "
-              >
-              </a>
-              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">Arates Property Co</span>
-                  <span class="favourite ml-auto text-darker-light"
-                    ><i class="fas fa-heart"></i
-                  ></span>
-                </div>
-
-                <a
-                  href="listing-details-full-image.html"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25"
-                    >Intership Property Sale</span
-                  >
-                </a>
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link"
-                      >Intership</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i>
-                    <span class="d-inline-block ml-2 text-danger"
-                      >$150.00 - $300.00
-                    </span>
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-clock"></i>
-                    <span class="d-inline-block ml-2">Posted 2 days ago</span>
-                  </div>
-                </div>
-                <div class="border-top pt-2 px-0 pb-0">
-                  Consulting have instructions to recruit a Company
-                  Accountant/Bookkeeper...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6">
-            <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-5.jpg');
-                "
-              >
-              </a>
-              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">Roishalattan LLC</span>
-                  <span class="favourite ml-auto text-darker-light"
-                    ><i class="fas fa-heart"></i
-                  ></span>
-                </div>
-
-                <a
-                  href="listing-details-gallery.html"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25">UI/UX Product Designer</span>
-                </a>
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York
-                    </span>
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link">Anywhere</span>
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i>
-                    <span class="d-inline-block ml-2 text-danger"
-                      >$1,000.00 - $2,000.00
-                    </span>
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-clock"></i
-                    ><span class="d-inline-block ml-2">Posted 2 hours ago</span>
-                  </div>
-                </div>
-                <div class="border-top pt-2 px-0 pb-0">
-                  Consulting have instructions to recruit a Company
-                  Accountant/Bookkeeper...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6">
-            <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-6.jpg');
-                "
-              >
-              </a>
-              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">BeatsLabs Co</span>
-                  <span class="favourite ml-auto text-darker-light"
-                    ><i class="fas fa-heart"></i
-                  ></span>
-                </div>
-
-                <a
-                  href="listing-details-full-image.html"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25">WP Front-End Developer</span>
-                </a>
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link"
-                      >Full Time</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i
-                    ><span class="d-inline-block ml-2 text-danger"
-                      >$1,500.00 - $3,000.00</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-clock"></i
-                    ><span class="d-inline-block ml-2">Posted 3 days ago</span>
-                  </div>
-                </div>
-                <div class="border-top pt-2 px-0 pb-0">
-                  Consulting have instructions to recruit a Company
-                  Accountant/Bookkeeper...
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-6">
-            <div class="store media align-items-stretch bg-white job-store">
-              <a
-                href="listing-details-full-image.html"
-                class="store-image"
-                style="
-                  background-image: url('/static/images/shop/jobs-shop-7.jpg');
-                "
-              >
-              </a>
-              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                <div class="d-flex align-items-center lh-1">
-                  <span class="text-gray">Sun Travel Co</span>
-                  <span class="favourite ml-auto text-darker-light"
-                    ><i class="fas fa-heart"></i
-                  ></span>
-                </div>
-
-                <a
-                  href="listing-details-full-image.html"
-                  class="h5 text-dark d-inline-block store-name"
-                  ><span class="letter-spacing-25">Travel Sale Consultan</span>
-                </a>
-                <div class="row mb-3">
-                  <div class="col-lg-6">
-                    <i class="fal fa-map-marker-alt"></i
-                    ><span class="d-inline-block ml-2"
-                      >92 Halsey St, Brooklyn, New York
-                    </span>
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-briefcase"></i
-                    ><span class="d-inline-block ml-2 text-link"
-                      >Full Time</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i
-                    ><span class="d-inline-block ml-2 text-danger"
-                      >$300.00 - $800.00</span
-                    >
-                  </div>
-                  <div class="col-lg-6">
-                    <i class="fal fa-clock"></i
-                    ><span class="d-inline-block ml-2">Posted 4 days ago</span>
-                  </div>
-                </div>
-                <div class="border-top pt-2 px-0 pb-0">
-                  Consulting have instructions to recruit a Company
-                  Accountant/Bookkeeper...
-                </div>
-              </div>
-            </div>
-          </div>
+          {% empty %} {% endfor %}
         </div>
+        <!--BusinessListing Ends -->
         <div class="pagination">
           <a
             href="#"
