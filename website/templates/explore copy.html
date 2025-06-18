@@ -1,0 +1,774 @@
+{% extends 'components/base.html' %} {% load static %} {% block title %} {{
+page_title }} {% endblock %} {% block content %}
+
+<!-- #wrapper-content start -->
+<div id="wrapper-content" class="wrapper-content bg-gray-04 pb-0">
+  <div class="container">
+    <ul class="breadcrumb breadcrumb-style-02 py-7">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item">Sidebar Listing - Grid View</li>
+    </ul>
+    <div class="page-container row">
+      <div class="sidebar col-12 col-lg-4 order-1 order-lg-0">
+        <!-- <div class="card rounded-0 mb-6 map p-0">
+          <div
+            id="googleMap"
+            data-google-map="true"
+            class="small-map"
+            style="width: 100%; height: 179px"
+          ></div>
+          <div class="map-content">
+            <a
+              href="#"
+              class="btn btn-primary btn-icon-left font-size-md px-5 lh-18"
+              ><i class="fas fa-map-marker-alt"></i>See On Map</a
+            >
+          </div>
+        </div> -->
+        <div class="card search bg-white mb-6 border-0 rounded-0 px-6">
+          <div class="card-header bg-transparent border-0 pt-4 pb-0 px-0">
+            <h5 class="card-title mb-0">Search</h5>
+          </div>
+          <div class="card-body px-0 pb-42">
+            <div class="form-search form-search-style-03">
+              <div class="form-group">
+                <div class="input-group d-flex align-items-center">
+                  <label
+                    for="what"
+                    class="input-group-prepend text-dark font-weight-semibold"
+                    >What</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    id="what"
+                    placeholder="Any keywords..."
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group d-flex align-items-center">
+                  <label
+                    for="where"
+                    class="input-group-prepend text-dark font-weight-semibold"
+                    >Where</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    id="where"
+                    placeholder="City, postcode..."
+                  />
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary btn-block btn-icon-left font-size-md"
+              >
+                <i class="fal fa-search"></i>
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card widget-filter bg-white mb-6 border-0 rounded-0 px-6">
+          <div class="card-header bg-transparent border-0 pt-4 pb-0 px-0">
+            <h5 class="card-title mb-0">Filter</h5>
+          </div>
+          <div class="card-body px-0">
+            <div class="form-filter">
+              <form>
+                <div class="form-group category">
+                  <div class="select-custom">
+                    <select class="form-control">
+                      <option value="0">Categories</option>
+                      <option value="1">New York</option>
+                      <option value="1">LA</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group price-range">
+                  <label class="form-label"> Price Range </label>
+                  <div
+                    id="price"
+                    data-slider="true"
+                    data-slider-options='{"min":0,"max":4000,"values":[0,2000]}'
+                  ></div>
+                  <div class="description">
+                    From <input type="text" readonly class="amount border-0" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      value="Open Now"
+                      class="form-control bg-transparent"
+                    />
+                    <span class="input-group-append"
+                      ><i class="fal fa-clock"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      value="Highest Rated"
+                      class="form-control bg-transparent"
+                    />
+                    <span class="input-group-append"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      value="Most Reviewed"
+                      class="form-control bg-transparent"
+                    />
+                    <span class="input-group-append"
+                      ><i class="fal fa-comment"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="form-group filter-tags">
+                  <label class="form-label">Filter by tags</label>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="electronics"
+                    />
+                    <label class="custom-control-label" for="electronics">
+                      Design
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="books"
+                    />
+                    <label class="custom-control-label" for="books">
+                      Developer
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="fashion"
+                    />
+                    <label class="custom-control-label" for="fashion">
+                      Programer
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="vintage"
+                    />
+                    <label class="custom-control-label" for="vintage">
+                      Consulting
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="gift"
+                    />
+                    <label class="custom-control-label" for="gift">
+                      Accounting
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="furniture"
+                    />
+                    <label class="custom-control-label" for="furniture">
+                      Transporter
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="women-clothing"
+                    />
+                    <label class="custom-control-label" for="women-clothing">
+                      Technology
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="men-clothing"
+                    />
+                    <label class="custom-control-label" for="men-clothing">
+                      Waiter
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="shoes"
+                    />
+                    <label class="custom-control-label" for="shoes">
+                      Intership
+                    </label>
+                  </div>
+                  <div class="custom-control custom-checkbox lh-19">
+                    <input
+                      class="custom-control-input"
+                      type="checkbox"
+                      id="jewelry"
+                    />
+                    <label class="custom-control-label" for="jewelry">
+                      Controllers
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="campaign">
+          <img src="/static/images/other/campaign.jpg" alt="Campaign" />
+        </div>
+      </div>
+      <div class="page-content col-12 col-lg-8">
+        <div class="explore-filter d-lg-flex align-items-center d-block">
+          <div class="text-dark font-weight-semibold font-size-md mb-4 mb-lg-0">
+            56 Results found
+          </div>
+          <div class="form-filter d-flex align-items-center ml-auto">
+            <div class="form-group row no-gutters align-items-center">
+              <label
+                for="sort-by"
+                class="col-sm-3 text-dark font-size-md font-weight-semibold mb-0"
+                >Sort by</label
+              >
+              <div class="select-custom col-sm-9 bg-white">
+                <select id="sort-by" class="form-control bg-transparent">
+                  <option value="0">Latest</option>
+                  <option value="1">New York</option>
+                  <option value="1">LA</option>
+                </select>
+              </div>
+            </div>
+            <div class="format-listing ml-auto">
+              <a href="explore-sidebar-grid.html"><i class="fas fa-th"></i></a>
+              <a href="#" class="active"><i class="fal fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="store-listing-style store-listing-style-02">
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-1.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">MME Studio</span>
+                  <span class="favourite ml-auto text-danger"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="{% url 'business_details' %}"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25">3D Animation Designer</span>
+                </a>
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link"
+                      >Freelancer</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i
+                    ><span class="d-inline-block ml-2 text-danger"
+                      >$500.00 - $1,000.00</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-clock"></i
+                    ><span class="d-inline-block ml-2"
+                      >Posted 11 hours ago</span
+                    >
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  They specialize in makgeolli at this Korean-style pub in
+                  Seorae Village...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-2.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">Wave Agency</span>
+                  <span class="favourite ml-auto text-darker-light"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="listing-details-full-image.html"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25">Account Executive</span>
+                </a>
+                <div class="row mb-2">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link"
+                      >Part Time</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i>
+                    <span class="d-inline-block ml-2 text-danger"
+                      >$300.00 - $800.00
+                    </span>
+                  </div>
+                  <div class="col-lg-6 item">
+                    <i class="fal fa-clock"></i>
+                    <span class="d-inline-block ml-2"
+                      >Posted 22 hours ago
+                    </span>
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  Consulting have instructions to recruit a Company
+                  Accountant/Bookkeeper...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-3.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">ABA Logistic JSC</span>
+                  <span class="favourite ml-auto text-darker-light"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="listing-details-full-image.html"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25"
+                    >3Transport Shift Controller</span
+                  >
+                </a>
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link"
+                      >Temporary</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i>
+                    <span class="d-inline-block ml-2 text-danger"
+                      >$100.00/day</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-clock"></i>
+                    <span class="d-inline-block ml-2">Posted 1 days ago</span>
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  Consulting have instructions to recruit a Company
+                  Accountant/Bookkeeper...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-4.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">Arates Property Co</span>
+                  <span class="favourite ml-auto text-darker-light"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="listing-details-full-image.html"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25"
+                    >Intership Property Sale</span
+                  >
+                </a>
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link"
+                      >Intership</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i>
+                    <span class="d-inline-block ml-2 text-danger"
+                      >$150.00 - $300.00
+                    </span>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-clock"></i>
+                    <span class="d-inline-block ml-2">Posted 2 days ago</span>
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  Consulting have instructions to recruit a Company
+                  Accountant/Bookkeeper...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-5.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">Roishalattan LLC</span>
+                  <span class="favourite ml-auto text-darker-light"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="listing-details-gallery.html"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25">UI/UX Product Designer</span>
+                </a>
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York
+                    </span>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link">Anywhere</span>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i>
+                    <span class="d-inline-block ml-2 text-danger"
+                      >$1,000.00 - $2,000.00
+                    </span>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-clock"></i
+                    ><span class="d-inline-block ml-2">Posted 2 hours ago</span>
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  Consulting have instructions to recruit a Company
+                  Accountant/Bookkeeper...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-6.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">BeatsLabs Co</span>
+                  <span class="favourite ml-auto text-darker-light"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="listing-details-full-image.html"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25">WP Front-End Developer</span>
+                </a>
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link"
+                      >Full Time</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i
+                    ><span class="d-inline-block ml-2 text-danger"
+                      >$1,500.00 - $3,000.00</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-clock"></i
+                    ><span class="d-inline-block ml-2">Posted 3 days ago</span>
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  Consulting have instructions to recruit a Company
+                  Accountant/Bookkeeper...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div class="store media align-items-stretch bg-white job-store">
+              <a
+                href="listing-details-full-image.html"
+                class="store-image"
+                style="
+                  background-image: url('/static/images/shop/jobs-shop-7.jpg');
+                "
+              >
+              </a>
+              <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
+                <div class="d-flex align-items-center lh-1">
+                  <span class="text-gray">Sun Travel Co</span>
+                  <span class="favourite ml-auto text-darker-light"
+                    ><i class="fas fa-heart"></i
+                  ></span>
+                </div>
+
+                <a
+                  href="listing-details-full-image.html"
+                  class="h5 text-dark d-inline-block store-name"
+                  ><span class="letter-spacing-25">Travel Sale Consultan</span>
+                </a>
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <i class="fal fa-map-marker-alt"></i
+                    ><span class="d-inline-block ml-2"
+                      >92 Halsey St, Brooklyn, New York
+                    </span>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-briefcase"></i
+                    ><span class="d-inline-block ml-2 text-link"
+                      >Full Time</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-sack-dollar"></i
+                    ><span class="d-inline-block ml-2 text-danger"
+                      >$300.00 - $800.00</span
+                    >
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fal fa-clock"></i
+                    ><span class="d-inline-block ml-2">Posted 4 days ago</span>
+                  </div>
+                </div>
+                <div class="border-top pt-2 px-0 pb-0">
+                  Consulting have instructions to recruit a Company
+                  Accountant/Bookkeeper...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a
+            href="#"
+            class="btn btn-lg btn-dark-red btn-block font-size-h5 lh-18"
+          >
+            More Results...48/56
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="recent-view bg-white pt-9 pb-0 pb-10">
+    <div class="container">
+      <div class="mb-8">
+        <h5 class="mb-0">Recently Viewed</h5>
+      </div>
+      <div class="recent-view job-recent-view row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="store media align-items-stretch bg-white px-4">
+            <a href="listing-details-full-image.html" class="store-image">
+              <img
+                src="/static/images/shop/job-recent-view-1.jpg"
+                alt="Job recent view 1"
+              />
+            </a>
+            <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
+              <a
+                href="listing-details-full-image.html"
+                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"
+                ><span class="letter-spacing-25"
+                  >Senior Visual Product Designer</span
+                >
+              </a>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <i class="fal fa-map-marker-alt"></i
+                  ><span class="d-inline-block ml-2"
+                    >77 Main St, Queen, NY</span
+                  >
+                </div>
+                <div class="col-12">
+                  <i class="fal fa-briefcase"></i
+                  ><span class="d-inline-block ml-2 text-link">Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="store media align-items-stretch bg-white px-4">
+            <a href="listing-details-full-image.html" class="store-image">
+              <img
+                src="/static/images/shop/job-recent-view-2.jpg"
+                alt="Job recent view 2"
+              />
+            </a>
+            <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
+              <a
+                href="listing-details-full-image.html"
+                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"
+                ><span class="letter-spacing-25">Android Developer</span>
+              </a>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <i class="fal fa-map-marker-alt"></i
+                  ><span class="d-inline-block ml-2"
+                    >77 Main St, Queen, NY</span
+                  >
+                </div>
+                <div class="col-12">
+                  <i class="fal fa-briefcase"></i
+                  ><span class="d-inline-block ml-2 text-link">Full Time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="store media align-items-stretch bg-white px-4">
+            <a href="listing-details-full-image.html" class="store-image">
+              <img
+                src="/static/images/shop/job-recent-view-3.jpg"
+                alt="Job recent view 3"
+              />
+            </a>
+            <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
+              <a
+                href="listing-details-full-image.html"
+                class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-11"
+                ><span class="letter-spacing-25"
+                  >Intership Finacial Consultancy</span
+                >
+              </a>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <i class="fal fa-map-marker-alt"></i
+                  ><span class="d-inline-block ml-2"
+                    >77 Main St, Queen, NY</span
+                  >
+                </div>
+                <div class="col-12">
+                  <i class="fal fa-briefcase"></i
+                  ><span class="d-inline-block ml-2 text-link">Intership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #wrapper-content end -->
+
+{%endblock %}
