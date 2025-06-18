@@ -566,7 +566,7 @@ page_title }} {% endblock %} {% block content %} {% load humanize %}
                         <a
                           href="#"
                           class="text-secondary pr-3 text-decoration-none address">92
-                          Halsey St, Brooklyn, NY</a>
+                          Halsey St, {{business.city}}, NY</a>
                       </div>
                     </div>
                   </div>
@@ -758,7 +758,7 @@ page_title }} {% endblock %} {% block content %} {% load humanize %}
                     class="list-group-item bg-transparent d-flex text-dark px-0">
                     <span class="item-icon mr-3"><i
                         class="fal fa-map-marker-alt"></i></span>
-                    <span class="card-text">125 Mountain St, Brooklyn, NY</span>
+                    <span class="card-text">{{business.address}}, {{business.city}}, {{business.country}}</span>
                   </li>
                   <li
                     class="list-group-item bg-transparent d-flex text-dark px-0">
@@ -967,7 +967,7 @@ page_title }} {% endblock %} {% block content %} {% load humanize %}
               </div>
             </div>
           </div>
-          <div
+          <!-- <div
             class="card p-4 widget border-0 addition-detail bg-gray-06 mb-6 rounded-0">
             <div
               class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
@@ -1020,7 +1020,7 @@ page_title }} {% endblock %} {% block content %} {% load humanize %}
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <!-- <div
             class="card p-4 widget border-0 contact bg-gray-06 rounded-0 mb-6"
           >
