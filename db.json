@@ -1,0 +1,3301 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-06-18T09:51:56.593Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Technology",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-06-18T10:05:17.337Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Liberia Digital Insights",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-06-18T11:46:10.132Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Business & Professional Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-06-18T11:47:34.161Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Health & Wellness",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-06-18T11:50:41.097Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Technology & Innovation",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-06-18T11:52:18.758Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Education & Training",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-06-18T11:53:24.195Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "Creative & Media Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2025-06-18T11:54:26.145Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "Fashion & Beauty",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2025-06-18T11:56:56.163Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "Construction & Real Estate",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2025-06-18T11:58:08.989Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "Agriculture & Food",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2025-06-18T11:58:42.804Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "Transport & Logistics",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2025-06-18T11:59:02.218Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "10",
+      "object_repr": "Hospitality & Events",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2025-06-18T11:59:18.925Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "11",
+      "object_repr": "Financial & Insurance Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2025-06-18T12:00:12.844Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "12",
+      "object_repr": "Home & Living",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2025-06-18T12:02:12.394Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "13",
+      "object_repr": "Business & Professional Services > Accounting & Bookkeeping",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2025-06-18T12:02:45.805Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "14",
+      "object_repr": "Business & Professional Services > Legal Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2025-06-18T12:03:06.440Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "15",
+      "object_repr": "Business & Professional Services > Business Consulting",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2025-06-18T12:03:29.297Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "16",
+      "object_repr": "Business & Professional Services > Tax & Financial Advisory",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2025-06-18T12:03:59.820Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "17",
+      "object_repr": "Business & Professional Services > Human Resources & Recruitment",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2025-06-18T12:04:29.028Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "18",
+      "object_repr": "Business & Professional Services > Real Estate Agencies",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2025-06-18T12:04:56.059Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "19",
+      "object_repr": "Health & Wellness > Nutritionists & Dieticians",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2025-06-18T12:05:21.542Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "20",
+      "object_repr": "Health & Wellness > Fitness & Gyms",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2025-06-18T12:05:56.067Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "21",
+      "object_repr": "Health & Wellness > Mental Health Counselors",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2025-06-18T12:06:19.550Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "22",
+      "object_repr": "Health & Wellness > Herbal & Traditional Healers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2025-06-18T12:06:42.825Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "23",
+      "object_repr": "Health & Wellness > Private Hospitals",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2025-06-18T12:07:07.333Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "24",
+      "object_repr": "Health & Wellness > Pharmacies",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2025-06-18T12:07:29.456Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "25",
+      "object_repr": "Health & Wellness > Medical Clinics & Labs",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2025-06-18T12:07:57.980Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "26",
+      "object_repr": "Technology & Innovation > Tech Training Centers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2025-06-18T12:08:33.896Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "27",
+      "object_repr": "Technology & Innovation > Computer Repairs & Networking",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2025-06-18T12:09:03.755Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "28",
+      "object_repr": "Technology & Innovation > Software Solutions",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2025-06-18T12:09:26.873Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "29",
+      "object_repr": "Technology & Innovation > Cybersecurity Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2025-06-18T12:09:43.788Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "30",
+      "object_repr": "Technology & Innovation > IT Consulting",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2025-06-18T12:11:01.426Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "31",
+      "object_repr": "Technology & Innovation > Web & App Developers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2025-06-18T12:11:45.464Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "32",
+      "object_repr": "Education & Training > Certification Centers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2025-06-18T12:13:22.078Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "33",
+      "object_repr": "Education & Training > Education Consultants",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2025-06-18T12:14:07.877Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "34",
+      "object_repr": "Education & Training > Tutors & Home Teachers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2025-06-18T12:14:34.107Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "35",
+      "object_repr": "Education & Training > Study Abroad Agencies",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2025-06-18T12:15:00.165Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "36",
+      "object_repr": "Education & Training > Vocational Institutes",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2025-06-18T12:15:21.554Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "37",
+      "object_repr": "Education & Training > Private Schools",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2025-06-18T12:16:12.593Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "38",
+      "object_repr": "Creative & Media Services > Graphic Design",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2025-06-18T12:16:33.018Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "39",
+      "object_repr": "Creative & Media Services > Video & Photography",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2025-06-18T12:16:58.548Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "40",
+      "object_repr": "Creative & Media Services > Digital Content Creators",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2025-06-18T12:17:23.963Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "41",
+      "object_repr": "Creative & Media Services > Branding & Printing Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2025-06-18T12:18:10.063Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "42",
+      "object_repr": "Creative & Media Services > Media Production Companies",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2025-06-18T12:18:48.341Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "43",
+      "object_repr": "Creative & Media Services > Podcasting & Broadcasting",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2025-06-18T12:19:12.886Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "44",
+      "object_repr": "Fashion & Beauty > Tailors & Designers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2025-06-18T12:19:43.029Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "45",
+      "object_repr": "Fashion & Beauty > Hair Salons & Barbershops",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2025-06-18T12:20:30.824Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "46",
+      "object_repr": "Fashion & Beauty > Makeup Artists",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2025-06-18T12:22:47.132Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "47",
+      "object_repr": "Fashion & Beauty > Spa & Skin Care",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2025-06-18T12:23:26.429Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "48",
+      "object_repr": "Fashion & Beauty > Beauty Product Vendors",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2025-06-18T12:23:48.667Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "49",
+      "object_repr": "Fashion & Beauty > Shoe & Bag Makers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2025-06-18T12:24:55.117Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "50",
+      "object_repr": "Construction & Real Estate > Construction Companies",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2025-06-18T12:25:23.959Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "51",
+      "object_repr": "Construction & Real Estate > Civil Engineers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2025-06-18T12:25:42.481Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "52",
+      "object_repr": "Construction & Real Estate > Architects",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2025-06-18T12:26:20.407Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "53",
+      "object_repr": "Construction & Real Estate > Interior Designers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2025-06-18T12:26:42.247Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "54",
+      "object_repr": "Construction & Real Estate > Land Surveyors",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2025-06-18T12:27:05.196Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "55",
+      "object_repr": "Construction & Real Estate > Property Agents",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2025-06-18T12:28:26.970Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "56",
+      "object_repr": "Agriculture & Food > Agri-Tech Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2025-06-18T12:29:20.295Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "57",
+      "object_repr": "Agriculture & Food > Farmers & Cooperatives",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2025-06-18T12:30:01.138Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "58",
+      "object_repr": "Agriculture & Food > Farm Supply Stores",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2025-06-18T12:31:06.297Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "59",
+      "object_repr": "Agriculture & Food > Food Processors",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2025-06-18T12:31:37.306Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "60",
+      "object_repr": "Agriculture & Food > Organic Food Vendors",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2025-06-18T12:32:00.977Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "61",
+      "object_repr": "Agriculture & Food > Agricultural Consultants",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2025-06-18T12:33:16.245Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "62",
+      "object_repr": "Transport & Logistics > Delivery Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2025-06-18T12:33:55.178Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "63",
+      "object_repr": "Transport & Logistics > Freight & Shipping",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2025-06-18T12:35:37.995Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "64",
+      "object_repr": "Transport & Logistics > Car Rentals",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2025-06-18T12:37:04.456Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "65",
+      "object_repr": "Transport & Logistics > Mechanic Garages",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2025-06-18T12:38:34.080Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "66",
+      "object_repr": "Transport & Logistics > Driving Schools",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2025-06-18T12:39:49.164Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "67",
+      "object_repr": "Transport & Logistics > Logistics Consulting",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2025-06-18T12:40:24.840Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "68",
+      "object_repr": "Hospitality & Events > Hotels & Lodges",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2025-06-18T12:41:27.446Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "69",
+      "object_repr": "Hospitality & Events > Event Planners",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2025-06-18T12:42:36.626Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "70",
+      "object_repr": "Hospitality & Events > Catering Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2025-06-18T12:43:24.699Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "71",
+      "object_repr": "Hospitality & Events > Decor & Rentals",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2025-06-18T12:44:09.379Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "72",
+      "object_repr": "Hospitality & Events > DJs & Live Bands",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2025-06-18T12:44:32.459Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "73",
+      "object_repr": "Hospitality & Events > Travel & Tour Agencies",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2025-06-18T12:44:55.975Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "74",
+      "object_repr": "Financial & Insurance Services > Microfinance Institutions",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2025-06-18T12:45:18.063Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "75",
+      "object_repr": "Financial & Insurance Services > Mobile Money & FinTech",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2025-06-18T12:45:34.796Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "76",
+      "object_repr": "Financial & Insurance Services > Insurance Brokers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2025-06-18T12:46:00.897Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "77",
+      "object_repr": "Financial & Insurance Services > Loan & Credit Providers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2025-06-18T12:47:00.530Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "78",
+      "object_repr": "Financial & Insurance Services > Investment Firms",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2025-06-18T12:49:00.305Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "79",
+      "object_repr": "Home & Living > Electricians & Plumbers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2025-06-18T12:49:31.034Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "80",
+      "object_repr": "Home & Living > Furniture Makers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2025-06-18T12:51:44.889Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "81",
+      "object_repr": "Home & Living > Housekeeping Services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2025-06-18T12:52:32.133Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "82",
+      "object_repr": "Home & Living > Interior Decorators",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2025-06-18T12:53:06.533Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "83",
+      "object_repr": "Home & Living > Appliance Repairs",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2025-06-18T12:53:26.256Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "84",
+      "object_repr": "Home & Living > Home Security Solutions",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2025-06-18T13:10:14.237Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "proaccount_admin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2025-06-18T13:12:29.783Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "ProAccount Liberia",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2025-06-18T13:13:45.013Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "medcare_health",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2025-06-18T13:15:02.770Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "MedCare Diagnostic Center",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2025-06-18T13:15:47.277Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "codelab_tech",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2025-06-18T13:17:27.293Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "CodeLab Liberia",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2025-06-18T13:18:12.107Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "smartskills_edu",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2025-06-18T13:19:45.946Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "SmartSkills Academy",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2025-06-18T13:20:36.585Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "6",
+      "object_repr": "visualspark_media",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2025-06-18T13:22:12.740Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "VisualSpark Studios",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2025-06-18T13:22:52.147Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "7",
+      "object_repr": "luxestyle_fashion",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2025-06-18T13:24:21.307Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "LuxeStyle Fashion House",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2025-06-18T13:25:02.695Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "8",
+      "object_repr": "buildtech_eng",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2025-06-18T13:26:23.650Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "BuildTech Engineers Inc.",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2025-06-18T13:27:00.653Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "9",
+      "object_repr": "greenharvest_agri",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2025-06-18T13:32:01.871Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Green Harvest Liberia",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2025-06-18T13:34:08.082Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "10",
+      "object_repr": "swiftmove_logistics",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2025-06-18T13:34:53.485Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "SwiftMove Express",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2025-06-18T13:35:58.547Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "11",
+      "object_repr": "palmbreeze_events",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2025-06-18T13:37:13.919Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Palm Breeze Events & Lodge",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2025-06-18T13:38:01.950Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "12",
+      "object_repr": "securefunds_fin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2025-06-18T13:39:17.474Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "12",
+      "object_repr": "SecureFunds Microfinance",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2025-06-18T13:39:49.171Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "13",
+      "object_repr": "homefix_services",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2025-06-18T13:41:12.646Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "13",
+      "object_repr": "HomeFix Liberia",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2025-06-18T15:02:26.032Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Liberia Digital Insights Media",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2025-06-18T15:08:57.989Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "ProAccount Liberia Media",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add business",
+      "content_type": 7,
+      "codename": "add_business"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change business",
+      "content_type": 7,
+      "codename": "change_business"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete business",
+      "content_type": 7,
+      "codename": "delete_business"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view business",
+      "content_type": 7,
+      "codename": "view_business"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add business hour",
+      "content_type": 8,
+      "codename": "add_businesshour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change business hour",
+      "content_type": 8,
+      "codename": "change_businesshour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete business hour",
+      "content_type": 8,
+      "codename": "delete_businesshour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view business hour",
+      "content_type": 8,
+      "codename": "view_businesshour"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add business media",
+      "content_type": 9,
+      "codename": "add_businessmedia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change business media",
+      "content_type": 9,
+      "codename": "change_businessmedia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete business media",
+      "content_type": 9,
+      "codename": "delete_businessmedia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view business media",
+      "content_type": 9,
+      "codename": "view_businessmedia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add category",
+      "content_type": 10,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change category",
+      "content_type": 10,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete category",
+      "content_type": 10,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view category",
+      "content_type": 10,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add review",
+      "content_type": 11,
+      "codename": "add_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change review",
+      "content_type": 11,
+      "codename": "change_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete review",
+      "content_type": 11,
+      "codename": "delete_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view review",
+      "content_type": 11,
+      "codename": "view_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add bookmark",
+      "content_type": 12,
+      "codename": "add_bookmark"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change bookmark",
+      "content_type": 12,
+      "codename": "change_bookmark"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete bookmark",
+      "content_type": 12,
+      "codename": "delete_bookmark"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view bookmark",
+      "content_type": 12,
+      "codename": "view_bookmark"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Cox9cZ7f8NyhutGi0b3DHv$6CoYVxfGNM2W2xzOA+IttNITi2qrmdOZj5nOTmyzx8o=",
+      "last_login": "2025-06-18T09:46:14.930Z",
+      "is_superuser": true,
+      "username": "james",
+      "first_name": "",
+      "last_name": "",
+      "email": "techenthusiastmorgan1616@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-06-18T09:45:16.198Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$5IWIDp8OBlM6dI2hYrYSAt$unPZhJLXSvYeuEpDNCCHw72ijgP2fZ6D+hzygacxmbU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "proaccount_admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:10:13.752Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$NT3rfJc9GqogLbTEDOMEqW$ahlkRqaezM9BbpF/92Km9xUgVJ9pQ04Aufq1rA2PkFc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "medcare_health",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:13:44.552Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$RWejW8j7RSBCitUsQgJ2jk$jCsapwI7no9q2Hhh1JSr39OOl5XlKK5LlF5C7vrYTHo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "codelab_tech",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:15:46.814Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$EbVYqppJb6vPAsw2p4DtXG$pH2ln5qPppLjj4uEX7d9bJG/56KpqwDUmIjpzFAdKB4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "smartskills_edu",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:18:11.640Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$TYJQndWejeMHipRsbUhNMU$m0NojeLG44NB2QN66DJaUv//tLqHQ6pS2HsRroarm5A=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "visualspark_media",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:20:36.122Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$NGOUVDQRyNwgibtvIJmpwb$7tH5SEB7mA8xtPfE7+JPVWXYvx0e+tKQYrRKg+ylWHQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "luxestyle_fashion",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:22:51.680Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$8AXX3sufWYaY67faOKwYmO$VmUPYL27/nrQk0Umy2Vi2abVKYaoHLkV68Sq1iFCPSM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "buildtech_eng",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:25:02.231Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$KUf5Cz7CqSbfa3UVVf4hRI$2EAFxq16OkNHGKHpLzusmgTup8CpC2otfkV90a9p5iY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "greenharvest_agri",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:27:00.192Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Cyqq1xJg4a1jMig86do2tc$vtgOyoUFxc1FvpkKfduog+Go/901N2CcirVC97YS0Nw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "swiftmove_logistics",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:34:07.709Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$WQZfczeeds1SSdIoWdJvb4$i3r5JSrUVtBomXbii/E37z2tkWg3scPeLw/lgxd1qSA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "palmbreeze_events",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:35:58.175Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$uaCrMOROBzmuNPdsQUM7mc$VCqudoGbPgwcO7JlR/LfhcU5/S6ioPkulF5w1q9jcfQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "securefunds_fin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:38:01.575Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$4x402Xp2bYUVRzrLzhwDei$YJldrprbokHf+z4dGMlffoca6aGk5zPj4MFaujlysM8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "homefix_services",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-06-18T13:39:48.805Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": { "app_label": "admin", "model": "logentry" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": { "app_label": "auth", "model": "permission" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": { "app_label": "auth", "model": "group" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": { "app_label": "auth", "model": "user" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": { "app_label": "contenttypes", "model": "contenttype" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": { "app_label": "sessions", "model": "session" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": { "app_label": "website", "model": "business" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": { "app_label": "website", "model": "businesshour" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": { "app_label": "website", "model": "businessmedia" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": { "app_label": "website", "model": "category" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": { "app_label": "website", "model": "review" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": { "app_label": "website", "model": "bookmark" }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "5l6keqi38rtb30srzuzvv3a92qu7hptt",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCGgoBL9z0DYZhBqoYmpV0Z765NutDtf-_9l4hpW2vcOi9xInERIE6_G6b84LYDuqd2m2We27pMKHdFHrTLcSZ-Xg_376CmXr-10eQGA5w4YfEaTdHgSFnKGoPLTMUhkQrB-wJWwQCQz8jOKh-c0Uq8P_j7N88:1uRpN0:V6O61RdosFQvjFZs-XZw5OM_4php3izvjzmZDQBgOgo",
+      "expire_date": "2025-07-02T09:46:14.937Z"
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 1,
+    "fields": {
+      "name": "Technology & Innovation",
+      "slug": "technology",
+      "description": "This category highlights tech-driven businesses and professionals offering solutions in software development, IT infrastructure, cybersecurity, tech consulting, and digital transformation. It features startups, developers, and innovation hubs driving Liberia�s digital economy through scalable, data-driven, and automated technologies.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 2,
+    "fields": {
+      "name": "Business & Professional Services",
+      "slug": "business-professional-services",
+      "description": "This category features trusted experts offering professional support across accounting, legal, consulting, HR, real estate, and more. These services help businesses operate smoothly, stay compliant, and grow with confidence in the Liberian market.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 3,
+    "fields": {
+      "name": "Health & Wellness",
+      "slug": "health-wellness",
+      "description": "This category includes licensed professionals and facilities providing medical, therapeutic, and preventive health services. It covers general and specialized clinics, diagnostic labs, pharmacies, mental health practitioners, fitness centers, and nutrition experts focused on improving individual and community well-being across Liberia.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 4,
+    "fields": {
+      "name": "Education & Training",
+      "slug": "education-training",
+      "description": "This category comprises institutions and professionals delivering academic, vocational, and capacity-building programs. It includes schools, training centers, tutors, education consultants, and certification providers focused on knowledge transfer, skills development, and lifelong learning solutions tailored to Liberia�s evolving educational needs.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 5,
+    "fields": {
+      "name": "Creative & Media Services",
+      "slug": "creative-media-services",
+      "description": "This category features professionals and agencies offering visual, audio, and branding solutions. It includes graphic designers, photographers, videographers, media producers, content creators, and printing specialists who craft compelling digital and print media to support brand visibility, marketing, and storytelling across Liberia.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 6,
+    "fields": {
+      "name": "Fashion & Beauty",
+      "slug": "fashion-beauty",
+      "description": "This category includes industry experts and entrepreneurs offering style, grooming, and personal care services. It features fashion designers, tailors, hair stylists, barbers, makeup artists, skincare professionals, and beauty product vendors dedicated to enhancing personal appearance and lifestyle trends within Liberia.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 7,
+    "fields": {
+      "name": "Construction & Real Estate",
+      "slug": "construction-real-estate",
+      "description": "This category covers professionals and firms involved in the design, development, and management of physical infrastructure and property. It includes construction companies, architects, civil engineers, land surveyors, interior designers, and real estate agents delivering residential, commercial, and industrial solutions across Liberia.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 8,
+    "fields": {
+      "name": "Agriculture & Food",
+      "slug": "agriculture-food",
+      "description": "This category features agribusinesses, farmers, and service providers engaged in food production, processing, and distribution. It includes agricultural consultants, farm supply vendors, cooperatives, food processors, and organic produce suppliers working to enhance food security, value chains, and agri-tech adoption across Liberia.",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 9,
+    "fields": {
+      "name": "Transport & Logistics",
+      "slug": "transport-logistics",
+      "description": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 10,
+    "fields": {
+      "name": "Hospitality & Events",
+      "slug": "hospitality-events",
+      "description": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 11,
+    "fields": {
+      "name": "Financial & Insurance Services",
+      "slug": "financial-insurance-services",
+      "description": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 12,
+    "fields": {
+      "name": "Home & Living",
+      "slug": "home-living",
+      "description": "",
+      "parent": null
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 13,
+    "fields": {
+      "name": "Accounting & Bookkeeping",
+      "slug": "business-professional-services-accounting-bookkeeping",
+      "description": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 14,
+    "fields": {
+      "name": "Legal Services",
+      "slug": "business-professional-services-legal-services",
+      "description": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 15,
+    "fields": {
+      "name": "Business Consulting",
+      "slug": "business-professional-services-business-consulting",
+      "description": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 16,
+    "fields": {
+      "name": "Tax & Financial Advisory",
+      "slug": "business-professional-services-tax-financial-advisory",
+      "description": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 17,
+    "fields": {
+      "name": "Human Resources & Recruitment",
+      "slug": "business-professional-services-human-resources-recruitment",
+      "description": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 18,
+    "fields": {
+      "name": "Real Estate Agencies",
+      "slug": "business-professional-services-real-estate-agencies",
+      "description": "",
+      "parent": 2
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 19,
+    "fields": {
+      "name": "Nutritionists & Dieticians",
+      "slug": "health-wellness-nutritionists-dieticians",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 20,
+    "fields": {
+      "name": "Fitness & Gyms",
+      "slug": "health-wellness-fitness-gyms",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 21,
+    "fields": {
+      "name": "Mental Health Counselors",
+      "slug": "health-wellness-mental-health-counselors",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 22,
+    "fields": {
+      "name": "Herbal & Traditional Healers",
+      "slug": "health-wellness-herbal-traditional-healers",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 23,
+    "fields": {
+      "name": "Private Hospitals",
+      "slug": "health-wellness-private-hospitals",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 24,
+    "fields": {
+      "name": "Pharmacies",
+      "slug": "health-wellness-pharmacies",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 25,
+    "fields": {
+      "name": "Medical Clinics & Labs",
+      "slug": "health-wellness-medical-clinics-labs",
+      "description": "",
+      "parent": 3
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 26,
+    "fields": {
+      "name": "Tech Training Centers",
+      "slug": "technology-innovation-tech-training-centers",
+      "description": "",
+      "parent": 1
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 27,
+    "fields": {
+      "name": "Computer Repairs & Networking",
+      "slug": "technology-innovation-computer-repairs-networking",
+      "description": "",
+      "parent": 1
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 28,
+    "fields": {
+      "name": "Software Solutions",
+      "slug": "technology-innovation-software-solutions",
+      "description": "",
+      "parent": 1
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 29,
+    "fields": {
+      "name": "Cybersecurity Services",
+      "slug": "technology-innovation-cybersecurity-services",
+      "description": "",
+      "parent": 1
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 30,
+    "fields": {
+      "name": "IT Consulting",
+      "slug": "technology-innovation-it-consulting",
+      "description": "",
+      "parent": 1
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 31,
+    "fields": {
+      "name": "Web & App Developers",
+      "slug": "technology-innovation-web-app-developers",
+      "description": "",
+      "parent": 1
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 32,
+    "fields": {
+      "name": "Certification Centers",
+      "slug": "education-training-certification-centers",
+      "description": "",
+      "parent": 4
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 33,
+    "fields": {
+      "name": "Education Consultants",
+      "slug": "education-training-education-consultants",
+      "description": "",
+      "parent": 4
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 34,
+    "fields": {
+      "name": "Tutors & Home Teachers",
+      "slug": "education-training-tutors-home-teachers",
+      "description": "",
+      "parent": 4
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 35,
+    "fields": {
+      "name": "Study Abroad Agencies",
+      "slug": "education-training-study-abroad-agencies",
+      "description": "",
+      "parent": 4
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 36,
+    "fields": {
+      "name": "Vocational Institutes",
+      "slug": "education-training-vocational-institutes",
+      "description": "",
+      "parent": 4
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 37,
+    "fields": {
+      "name": "Private Schools",
+      "slug": "education-training-private-schools",
+      "description": "",
+      "parent": 4
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 38,
+    "fields": {
+      "name": "Graphic Design",
+      "slug": "creative-media-services-graphic-design",
+      "description": "",
+      "parent": 5
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 39,
+    "fields": {
+      "name": "Video & Photography",
+      "slug": "creative-media-services-video-photography",
+      "description": "",
+      "parent": 5
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 40,
+    "fields": {
+      "name": "Digital Content Creators",
+      "slug": "creative-media-services-digital-content-creators",
+      "description": "",
+      "parent": 5
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 41,
+    "fields": {
+      "name": "Branding & Printing Services",
+      "slug": "creative-media-services-branding-printing-services",
+      "description": "",
+      "parent": 5
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 42,
+    "fields": {
+      "name": "Media Production Companies",
+      "slug": "creative-media-services-media-production-companies",
+      "description": "",
+      "parent": 5
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 43,
+    "fields": {
+      "name": "Podcasting & Broadcasting",
+      "slug": "creative-media-services-podcasting-broadcasting",
+      "description": "",
+      "parent": 5
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 44,
+    "fields": {
+      "name": "Tailors & Designers",
+      "slug": "fashion-beauty-tailors-designers",
+      "description": "",
+      "parent": 6
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 45,
+    "fields": {
+      "name": "Hair Salons & Barbershops",
+      "slug": "fashion-beauty-hair-salons-barbershops",
+      "description": "",
+      "parent": 6
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 46,
+    "fields": {
+      "name": "Makeup Artists",
+      "slug": "fashion-beauty-makeup-artists",
+      "description": "",
+      "parent": 6
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 47,
+    "fields": {
+      "name": "Spa & Skin Care",
+      "slug": "fashion-beauty-spa-skin-care",
+      "description": "",
+      "parent": 6
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 48,
+    "fields": {
+      "name": "Beauty Product Vendors",
+      "slug": "fashion-beauty-beauty-product-vendors",
+      "description": "",
+      "parent": 6
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 49,
+    "fields": {
+      "name": "Shoe & Bag Makers",
+      "slug": "fashion-beauty-shoe-bag-makers",
+      "description": "",
+      "parent": 6
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 50,
+    "fields": {
+      "name": "Construction Companies",
+      "slug": "construction-real-estate-construction-companies",
+      "description": "",
+      "parent": 7
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 51,
+    "fields": {
+      "name": "Civil Engineers",
+      "slug": "construction-real-estate-civil-engineers",
+      "description": "",
+      "parent": 7
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 52,
+    "fields": {
+      "name": "Architects",
+      "slug": "construction-real-estate-architects",
+      "description": "",
+      "parent": 7
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 53,
+    "fields": {
+      "name": "Interior Designers",
+      "slug": "construction-real-estate-interior-designers",
+      "description": "",
+      "parent": 7
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 54,
+    "fields": {
+      "name": "Land Surveyors",
+      "slug": "construction-real-estate-land-surveyors",
+      "description": "",
+      "parent": 7
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 55,
+    "fields": {
+      "name": "Property Agents",
+      "slug": "construction-real-estate-property-agents",
+      "description": "",
+      "parent": 7
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 56,
+    "fields": {
+      "name": "Agri-Tech Services",
+      "slug": "agriculture-food-agri-tech-services",
+      "description": "",
+      "parent": 8
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 57,
+    "fields": {
+      "name": "Farmers & Cooperatives",
+      "slug": "agriculture-food-farmers-cooperatives",
+      "description": "",
+      "parent": 8
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 58,
+    "fields": {
+      "name": "Farm Supply Stores",
+      "slug": "agriculture-food-farm-supply-stores",
+      "description": "",
+      "parent": 8
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 59,
+    "fields": {
+      "name": "Food Processors",
+      "slug": "agriculture-food-food-processors",
+      "description": "",
+      "parent": 8
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 60,
+    "fields": {
+      "name": "Organic Food Vendors",
+      "slug": "agriculture-food-organic-food-vendors",
+      "description": "",
+      "parent": 8
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 61,
+    "fields": {
+      "name": "Agricultural Consultants",
+      "slug": "agriculture-food-agricultural-consultants",
+      "description": "",
+      "parent": 8
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 62,
+    "fields": {
+      "name": "Delivery Services",
+      "slug": "transport-logistics-delivery-services",
+      "description": "",
+      "parent": 9
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 63,
+    "fields": {
+      "name": "Freight & Shipping",
+      "slug": "transport-logistics-freight-shipping",
+      "description": "",
+      "parent": 9
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 64,
+    "fields": {
+      "name": "Car Rentals",
+      "slug": "transport-logistics-car-rentals",
+      "description": "",
+      "parent": 9
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 65,
+    "fields": {
+      "name": "Mechanic Garages",
+      "slug": "transport-logistics-mechanic-garages",
+      "description": "",
+      "parent": 9
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 66,
+    "fields": {
+      "name": "Driving Schools",
+      "slug": "transport-logistics-driving-schools",
+      "description": "",
+      "parent": 9
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 67,
+    "fields": {
+      "name": "Logistics Consulting",
+      "slug": "transport-logistics-logistics-consulting",
+      "description": "",
+      "parent": 9
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 68,
+    "fields": {
+      "name": "Hotels & Lodges",
+      "slug": "hospitality-events-hotels-lodges",
+      "description": "",
+      "parent": 10
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 69,
+    "fields": {
+      "name": "Event Planners",
+      "slug": "hospitality-events-event-planners",
+      "description": "",
+      "parent": 10
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 70,
+    "fields": {
+      "name": "Catering Services",
+      "slug": "hospitality-events-catering-services",
+      "description": "",
+      "parent": 10
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 71,
+    "fields": {
+      "name": "Decor & Rentals",
+      "slug": "hospitality-events-decor-rentals",
+      "description": "",
+      "parent": 10
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 72,
+    "fields": {
+      "name": "DJs & Live Bands",
+      "slug": "hospitality-events-djs-live-bands",
+      "description": "",
+      "parent": 10
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 73,
+    "fields": {
+      "name": "Travel & Tour Agencies",
+      "slug": "hospitality-events-travel-tour-agencies",
+      "description": "",
+      "parent": 10
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 74,
+    "fields": {
+      "name": "Microfinance Institutions",
+      "slug": "financial-insurance-services-microfinance-institutions",
+      "description": "",
+      "parent": 11
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 75,
+    "fields": {
+      "name": "Mobile Money & FinTech",
+      "slug": "financial-insurance-services-mobile-money-fintech",
+      "description": "",
+      "parent": 11
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 76,
+    "fields": {
+      "name": "Insurance Brokers",
+      "slug": "financial-insurance-services-insurance-brokers",
+      "description": "",
+      "parent": 11
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 77,
+    "fields": {
+      "name": "Loan & Credit Providers",
+      "slug": "financial-insurance-services-loan-credit-providers",
+      "description": "",
+      "parent": 11
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 78,
+    "fields": {
+      "name": "Investment Firms",
+      "slug": "financial-insurance-services-investment-firms",
+      "description": "",
+      "parent": 11
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 79,
+    "fields": {
+      "name": "Electricians & Plumbers",
+      "slug": "home-living-electricians-plumbers",
+      "description": "",
+      "parent": 12
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 80,
+    "fields": {
+      "name": "Furniture Makers",
+      "slug": "home-living-furniture-makers",
+      "description": "",
+      "parent": 12
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 81,
+    "fields": {
+      "name": "Housekeeping Services",
+      "slug": "home-living-housekeeping-services",
+      "description": "",
+      "parent": 12
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 82,
+    "fields": {
+      "name": "Interior Decorators",
+      "slug": "home-living-interior-decorators",
+      "description": "",
+      "parent": 12
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 83,
+    "fields": {
+      "name": "Appliance Repairs",
+      "slug": "home-living-appliance-repairs",
+      "description": "",
+      "parent": 12
+    }
+  },
+  {
+    "model": "website.category",
+    "pk": 84,
+    "fields": {
+      "name": "Home Security Solutions",
+      "slug": "home-living-home-security-solutions",
+      "description": "",
+      "parent": 12
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "name": "Liberia Digital Insights",
+      "slug": "liberia-digital-insights",
+      "category": 1,
+      "description": "Liberia Digital Insights is a forward-thinking platform dedicated to driving digital transformation and fostering innovation in Liberia. We serve as a hub for technology enthusiasts, entrepreneurs, and innovators, providing insights, resources, and opportunities to empower the next generation of digital leaders.\r\nOur mission is to bridge the gap between technology and society, enabling individuals and businesses to thrive in a rapidly evolving digital world. Through strategic partnerships, community engagement, and cutting-edge content, we aim to shape Liberia's digital future, one innovation at a time.\r\nAt Liberia Digital Insights, we believe in the power of technology to transform lives, build economies, and create sustainable solutions for a better tomorrow.",
+      "address": "Old Road",
+      "city": "Monrovia",
+      "country": "Liberia",
+      "phone": "0777850481",
+      "email": "liberiadigitalinsights@gmail.com",
+      "website": "http://liberiadigitalinsights.netlify.app",
+      "is_verified": true,
+      "created_at": "2025-06-18T10:05:17.334Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 2,
+    "fields": {
+      "owner": 2,
+      "name": "ProAccount Liberia",
+      "slug": "proaccount-liberia",
+      "category": 2,
+      "description": "A full-service accounting and tax consultancy helping SMEs manage their books, stay compliant, and make data-driven financial decisions.",
+      "address": "Monrovia",
+      "city": "Sinkor",
+      "country": "Liberia",
+      "phone": "0777777744",
+      "email": "",
+      "website": "",
+      "is_verified": true,
+      "created_at": "2025-06-18T13:12:29.780Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 3,
+    "fields": {
+      "owner": 3,
+      "name": "MedCare Diagnostic Center",
+      "slug": "medcare-diagnostic-center",
+      "category": 3,
+      "description": "A modern diagnostic lab and clinic in Monrovia offering blood tests, radiology, and general consultations with licensed medical staff.",
+      "address": "Bong County",
+      "city": "Gbangbar",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:15:02.767Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 4,
+    "fields": {
+      "owner": 4,
+      "name": "CodeLab Liberia",
+      "slug": "codelab-liberia",
+      "category": 1,
+      "description": "A local tech firm specializing in custom web apps, mobile solutions, and IT consulting for businesses and institutions.",
+      "address": "Monrovia",
+      "city": "Old Road",
+      "country": "Liberia",
+      "phone": "0777777732",
+      "email": "",
+      "website": "",
+      "is_verified": true,
+      "created_at": "2025-06-18T13:17:27.291Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 5,
+    "fields": {
+      "owner": 5,
+      "name": "SmartSkills Academy",
+      "slug": "smartskills-academy",
+      "category": 4,
+      "description": "A vocational training center offering short-term and diploma programs in ICT, business management, and entrepreneurship.",
+      "address": "Montserrado",
+      "city": "Duala",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:19:45.943Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 6,
+    "fields": {
+      "owner": 6,
+      "name": "VisualSpark Studios",
+      "slug": "visualspark-studios",
+      "category": 5,
+      "description": "A media production company that provides photography, videography, animation, and branding services for events and businesses.",
+      "address": "Sinoe County",
+      "city": "Greenville",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:22:12.737Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 7,
+    "fields": {
+      "owner": 7,
+      "name": "LuxeStyle Fashion House",
+      "slug": "luxestyle-fashion-house",
+      "category": 6,
+      "description": "A premium fashion brand run by Liberian designers, offering custom clothing, tailoring, and beauty services.",
+      "address": "Monrovia",
+      "city": "Paynesville",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": true,
+      "created_at": "2025-06-18T13:24:21.304Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 8,
+    "fields": {
+      "owner": 8,
+      "name": "BuildTech Engineers Inc.",
+      "slug": "buildtech-engineers-inc",
+      "category": 7,
+      "description": "A construction and engineering firm offering architectural design, project supervision, and real estate development services.",
+      "address": "Barnesville Estate",
+      "city": "Kebbah",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:26:23.646Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 9,
+    "fields": {
+      "owner": 9,
+      "name": "Green Harvest Liberia",
+      "slug": "green-harvest-liberia",
+      "category": 8,
+      "description": "An agribusiness cooperative producing and supplying organic vegetables, cassava, and local fruits to markets and restaurants.",
+      "address": "Old Road",
+      "city": "Monrovia",
+      "country": "Liberia",
+      "phone": "0777850481",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:32:01.870Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 10,
+    "fields": {
+      "owner": 10,
+      "name": "SwiftMove Express",
+      "slug": "swiftmove-express",
+      "category": 9,
+      "description": "A logistics and delivery company specializing in last-mile delivery, inter-county freight, and eCommerce logistics solutions.",
+      "address": "Old Road",
+      "city": "Monrovia",
+      "country": "Liberia",
+      "phone": "0777850481",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:34:53.483Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 11,
+    "fields": {
+      "owner": 11,
+      "name": "Palm Breeze Events & Lodge",
+      "slug": "palm-breeze-events-lodge",
+      "category": 10,
+      "description": "A boutique lodge and events venue offering luxury accommodation and event planning services for weddings and conferences.",
+      "address": "Nimba County",
+      "city": "Ganta",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:37:13.916Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 12,
+    "fields": {
+      "owner": 12,
+      "name": "SecureFunds Microfinance",
+      "slug": "securefunds-microfinance",
+      "category": 11,
+      "description": "A licensed microfinance institution providing savings, loans, and financial literacy programs to small businesses and individuals.",
+      "address": "Bomi County",
+      "city": "Tubmanbrug",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:39:17.472Z"
+    }
+  },
+  {
+    "model": "website.business",
+    "pk": 13,
+    "fields": {
+      "owner": 13,
+      "name": "HomeFix Liberia",
+      "slug": "homefix-liberia",
+      "category": 12,
+      "description": "A professional home maintenance and repair company offering electrical, plumbing, interior d�cor, and appliance servicing.",
+      "address": "Grand Cape Mount County",
+      "city": "Robertsport",
+      "country": "Liberia",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "is_verified": false,
+      "created_at": "2025-06-18T13:41:12.642Z"
+    }
+  },
+  {
+    "model": "website.businessmedia",
+    "pk": 1,
+    "fields": {
+      "business": 1,
+      "logo": "business_media/logo/LDI_Logo.jpg",
+      "cover": "business_media/cover/4.png",
+      "image": "business_media/LDI-VACATION_PROGRAM_FLYER.png",
+      "is_featured": false
+    }
+  },
+  {
+    "model": "website.businessmedia",
+    "pk": 2,
+    "fields": {
+      "business": 2,
+      "logo": "business_media/logo/Prologo.png",
+      "cover": "business_media/cover/Procurement.jpg",
+      "image": "business_media/Procurement.jpg",
+      "is_featured": true
+    }
+  }
+]
