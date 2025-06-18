@@ -209,7 +209,7 @@ page_title }} {% endblock %} {% block content %}
                   <span class="favourite ml-auto text-danger"><i class="fas fa-heart"></i></span>
                 </div>
 
-                <a href="{% url 'business_details' %}" class="h5 text-dark d-inline-block store-name"><span
+                <a href="{% url 'business_details' item.id %}" class="h5 text-dark d-inline-block store-name"><span
                     class="letter-spacing-25">{{item.name}}</span>
                 </a>
                 <div class="row mb-3">
@@ -218,6 +218,7 @@ page_title }} {% endblock %} {% block content %}
                       {{item.city}}</span>
                   </div>
                   <div class="col-lg-6">
+                    
                     <i class="fal fa-briefcase"></i>
                     {% if item.is_verified %}
                     <span class="d-inline-block ml-2 text-success">Verified</span>
@@ -226,8 +227,8 @@ page_title }} {% endblock %} {% block content %}
                     {% endif %}
                   </div>
                   <div class="col-lg-6">
-                    <i class="fal fa-sack-dollar"></i><span class="d-inline-block ml-2 text-danger">$500.00 -
-                      $1,000.00</span>
+                    <i class="fal fa-clock"></i><span class="d-inline-block ml-2 text-danger">8:00am -
+                      5:00pm</span>
                   </div>
                   <div class="col-lg-6">
                     <i class="fal fa-clock"></i><span class="d-inline-block ml-2">Posted {{item.created_at}}</span>
