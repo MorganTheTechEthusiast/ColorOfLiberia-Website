@@ -1,6 +1,5 @@
 {% extends 'components/base.html' %} {% load static %} {% block title %} {{
-page_title }} {% endblock %} {% block content %}
-
+page_title }} {% endblock %} {% block content %} {% load humanize %}
 <!-- #wrapper-content start -->
 <div id="wrapper-content" class="wrapper-content pb-0 pt-0">
   <div class="image"></div>
@@ -10,24 +9,24 @@ page_title }} {% endblock %} {% block content %}
         <ul class="breadcrumb breadcrumb-style-03 mb-4">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Shopping </a></li>
-          <li class="breadcrumb-item">Azzaro Men’s Clothing</li>
+          <li class="breadcrumb-item">{{business.name}}</li>
         </ul>
         <div
-          class="explore-details-top d-flex flex-wrap flex-lg-nowrap bg-white"
-        >
+          class="explore-details-top d-flex flex-wrap flex-lg-nowrap bg-white">
           <div class="store">
             <div class="d-flex flex-wrap">
-              <h2 class="text-dark mr-3 mb-2">Azzaro Men’s Clothing</h2>
+              <h2 class="text-dark mr-3 mb-2">{{business.name}}</h2>
+              {% if business.is_verified %}
               <span class="check font-weight-semibold text-green mb-2">
                 <svg class="icon icon-check-circle">
                   <use xlink:href="#icon-check-circle"></use>
                 </svg>
                 Verified
               </span>
+              {% else %} {% endif %}
             </div>
             <ul
-              class="list-inline store-meta d-flex flex-wrap align-items-center"
-            >
+              class="list-inline store-meta d-flex flex-wrap align-items-center">
               <li class="list-inline-item">
                 <span class="badge badge-success d-inline-block mr-1">5.0</span>
                 <span>4 rating</span>
@@ -36,72 +35,62 @@ page_title }} {% endblock %} {% block content %}
               <li class="list-inline-item">
                 <a
                   href="#"
-                  class="text-link text-decoration-none d-flex align-items-center"
-                >
+                  class="text-link text-decoration-none d-flex align-items-center">
                   <span class="d-inline-block mr-2 font-size-md">
                     <svg class="icon icon-bed">
                       <use xlink:href="#icon-bed"></use>
                     </svg>
                   </span>
-                  <span>Hotel</span>
+                  <span>{{business.category.name}}</span>
                 </a>
               </li>
               <li class="list-inline-item separate"></li>
               <li class="list-inline-item">
                 <span class="mr-1"><i class="fal fa-clock"></i></span>
-                <span>Posted 15 hours ago</span>
+                <span>Posted {{business.created_at|naturaltime}}</span>
               </li>
             </ul>
           </div>
           <div
-            class="ml-0 ml-lg-auto mt-4 mt-lg-0 d-flex flex-wrap flex-sm-nowrap"
-          >
+            class="ml-0 ml-lg-auto mt-4 mt-lg-0 d-flex flex-wrap flex-sm-nowrap">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a
                   href="#"
-                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-2 rounded-sm"
-                >
+                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-2 rounded-sm">
                   <span class="d-inline-block mr-1">
                     <i class="fal fa-exclamation-triangle"></i>
                   </span>
-                  Report</a
-                >
+                  Report</a>
               </li>
               <li class="list-inline-item">
                 <a
                   href="#"
-                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-3 rounded-sm"
-                >
+                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-3 rounded-sm">
                   <span class="d-inline-block mr-1">
                     <i class="fal fa-share-alt"></i>
                   </span>
-                  Share</a
-                >
+                  Share</a>
               </li>
               <li class="list-inline-item">
                 <a
                   href="#"
-                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-4 rounded-sm"
-                >
+                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-4 rounded-sm">
                   <span class="d-inline-block mr-1">
                     <i class="fal fa-bookmark"></i>
                   </span>
-                  Save</a
-                >
+                  Save</a>
               </li>
               <li class="list-inline-item">
                 <a
                   href="#"
-                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-2 rounded-sm"
-                >
+                  class="btn btn-white font-size-md mb-3 mb-sm-0 py-1 px-2 rounded-sm">
                   <span class="d-inline-block">
                     <svg class="icon icon-chart-bars">
                       <use xlink:href="#icon-chart-bars"></use>
                     </svg>
                   </span>
-                  Compare</a
-                >
+                  Compare</a>
               </li>
             </ul>
           </div>
@@ -112,34 +101,12 @@ page_title }} {% endblock %} {% block content %}
           <div class="explore-details-container">
             <div class="mb-9">
               <h5
-                class="font-size-lg text-uppercase border-bottom pb-2 pt-2 mb-6"
-              >
+                class="font-size-lg text-uppercase border-bottom pb-2 pt-2 mb-6">
                 description
               </h5>
               <h6 class="font-size-md mb-4">Introduce</h6>
               <div class="mb-7">
-                <p class="mb-6">
-                  Azzaro Men’s Clothing (often shortened to Thai‘s Flavour) is a
-                  1950s style diner located in Madison, Wisconsin. Opened in
-                  1946 by Daniel Raclift, and located just across the street
-                  from Camp Randall Stadium, it has become a popular game day
-                  Thai’s Taste Restaurant (often shortened to Thai‘s Taste) is a
-                  1950s style diner located in Madison, Wisconsin.<br />
-                  Opened in 1946 by Robert Downey Jr, and located just across
-                  the street from Camp Randall Stadium, it has become a popular
-                  game day tradition amongst many Badger fans. The diner is well
-                  known for its breakfast selections, especially the Scrambler,
-                  which is a large mound of potatoes, eggs, cheese, gravy, and a
-                  patrons’ choice of other toppings.
-                </p>
-                <p class="mb-0">
-                  Thai‘s Taste has also been featured on “Todd’s Taste of the
-                  Town” during one of ESPN’s college football broadcasts adition
-                  amongst many Badger fans. The diner is well known for its
-                  breakfast selections, especially the Scrambler, which is a
-                  large mound of potatoes, eggs, cheese, gravy, and a patrons’
-                  choice of other toppings.
-                </p>
+                <p class="mb-6">{{business.description|safe}}</p>
               </div>
               <h6 class="font-size-md mb-4">Features</h6>
               <div class="row">
@@ -185,8 +152,7 @@ page_title }} {% endblock %} {% block content %}
                       <span class="d-inline-block mr-2 font-size-h5">
                         <svg class="icon icon-ionicons_svg_logo-model-s">
                           <use
-                            xlink:href="#icon-ionicons_svg_logo-model-s"
-                          ></use>
+                            xlink:href="#icon-ionicons_svg_logo-model-s"></use>
                         </svg>
                       </span>
                       <span class="text-dark"> Car Parking </span>
@@ -441,8 +407,7 @@ page_title }} {% endblock %} {% block content %}
               </h6>
               <div
                 class="slick-slider arrow-top store-grid-style"
-                data-slick-options='{"slidesToShow": 2, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow": 1}}]}'
-              >
+                data-slick-options='{"slidesToShow": 2, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow": 1}}]}'>
                 <div class="box">
                   <div class="store card rounded-0 border-0">
                     <div class="position-relative store-image">
@@ -450,12 +415,10 @@ page_title }} {% endblock %} {% block content %}
                         <img
                           src="/static/images/shop/popular-place-1.jpg"
                           alt="store 1"
-                          class="card-img-top rounded-0"
-                        />
+                          class="card-img-top rounded-0" />
                       </a>
                       <div
-                        class="image-content position-absolute d-flex align-items-center"
-                      >
+                        class="image-content position-absolute d-flex align-items-center">
                         <div class="content-right ml-auto d-flex">
                           <a
                             href="/static/images/shop/full-popular-place-1.jpg"
@@ -463,8 +426,7 @@ page_title }} {% endblock %} {% block content %}
                             data-toggle="tooltip"
                             data-placement="top"
                             title="Quick view"
-                            data-gtf-mfp="true"
-                          >
+                            data-gtf-mfp="true">
                             <svg class="icon icon-expand">
                               <use xlink:href="#icon-expand"></use>
                             </svg>
@@ -474,34 +436,27 @@ page_title }} {% endblock %} {% block content %}
                             class="item marking"
                             data-toggle="tooltip"
                             data-placement="top"
-                            title="Bookmark"
-                            ><i class="fal fa-bookmark"></i
-                          ></a>
+                            title="Bookmark"><i class="fal fa-bookmark"></i></a>
                         </div>
                       </div>
                     </div>
                     <div class="card-body pb-4 border-right border-left">
                       <a
                         href="listing-details-full-image.html"
-                        class="card-title h5 text-dark d-inline-block mb-2"
-                        ><span class="letter-spacing-25"
-                          >Japan Rice Mixed Seafood</span
-                        ></a
-                      >
+                        class="card-title h5 text-dark d-inline-block mb-2"><span
+                          class="letter-spacing-25">Japan Rice Mixed
+                          Seafood</span></a>
                       <ul
-                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap"
-                      >
+                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                         <li class="list-inline-item">
-                          <span class="badge badge-success mr-1 d-inline-block"
-                            >5.0</span
-                          ><span class="number">4 rating</span>
+                          <span
+                            class="badge badge-success mr-1 d-inline-block">5.0</span><span
+                            class="number">4 rating</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
-                          <span class="mr-1">From</span
-                          ><span class="text-danger font-weight-semibold"
-                            >$9.0</span
-                          >
+                          <span class="mr-1">From</span><span
+                            class="text-danger font-weight-semibold">$9.0</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
@@ -509,12 +464,10 @@ page_title }} {% endblock %} {% block content %}
                         </li>
                       </ul>
                       <div class="media">
-                        <a href="#" class="d-inline-block mr-3"
-                          ><img
+                        <a href="#" class="d-inline-block mr-3"><img
                             src="/static/images/listing/testimonial-1.png"
                             alt="testimonial"
-                            class="rounded-circle"
-                          />
+                            class="rounded-circle" />
                         </a>
                         <div class="media-body lh-14 font-size-sm">
                           Overlooking Bloomsbury’s Russell Square and a 2
@@ -524,17 +477,15 @@ page_title }} {% endblock %} {% block content %}
                       </div>
                     </div>
                     <div
-                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom"
-                    >
+                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom">
                       <div class="border-top pt-3">
                         <span class="d-inline-block mr-1">
                           <i class="fal fa-map-marker-alt"></i>
                         </span>
                         <a
                           href="#"
-                          class="text-secondary pr-3 text-decoration-none address"
-                          >534 Salem Rd St, Newark, NY</a
-                        >
+                          class="text-secondary pr-3 text-decoration-none address">534
+                          Salem Rd St, Newark, NY</a>
                       </div>
                     </div>
                   </div>
@@ -546,12 +497,10 @@ page_title }} {% endblock %} {% block content %}
                         <img
                           src="/static/images/shop/popular-place-2.jpg"
                           alt="store 1"
-                          class="card-img-top rounded-0"
-                        />
+                          class="card-img-top rounded-0" />
                       </a>
                       <div
-                        class="image-content position-absolute d-flex align-items-center"
-                      >
+                        class="image-content position-absolute d-flex align-items-center">
                         <div class="content-right ml-auto d-flex">
                           <a
                             href="/static/images/shop/full-popular-place-2.jpg"
@@ -559,8 +508,7 @@ page_title }} {% endblock %} {% block content %}
                             data-toggle="tooltip"
                             data-placement="top"
                             title="Quick view"
-                            data-gtf-mfp="true"
-                          >
+                            data-gtf-mfp="true">
                             <svg class="icon icon-expand">
                               <use xlink:href="#icon-expand"></use>
                             </svg>
@@ -570,34 +518,27 @@ page_title }} {% endblock %} {% block content %}
                             class="item marking"
                             data-toggle="tooltip"
                             data-placement="top"
-                            title="Bookmark"
-                            ><i class="fal fa-bookmark"></i
-                          ></a>
+                            title="Bookmark"><i class="fal fa-bookmark"></i></a>
                         </div>
                       </div>
                     </div>
                     <div class="card-body pb-4 border-right border-left">
                       <a
                         href="listing-details-full-image.html"
-                        class="card-title h5 text-dark d-inline-block mb-2"
-                        ><span class="letter-spacing-25"
-                          >Fruit Cake - Halsey St
-                        </span></a
-                      >
+                        class="card-title h5 text-dark d-inline-block mb-2"><span
+                          class="letter-spacing-25">Fruit Cake - Halsey St
+                        </span></a>
                       <ul
-                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap"
-                      >
+                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                         <li class="list-inline-item">
-                          <span class="badge badge-success mr-1 d-inline-block"
-                            >4.8</span
-                          ><span class="number">2 rating</span>
+                          <span
+                            class="badge badge-success mr-1 d-inline-block">4.8</span><span
+                            class="number">2 rating</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
-                          <span class="mr-1">From</span
-                          ><span class="text-danger font-weight-semibold"
-                            >$4.0</span
-                          >
+                          <span class="mr-1">From</span><span
+                            class="text-danger font-weight-semibold">$4.0</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
@@ -605,12 +546,10 @@ page_title }} {% endblock %} {% block content %}
                         </li>
                       </ul>
                       <div class="media">
-                        <a href="#" class="d-inline-block mr-3"
-                          ><img
+                        <a href="#" class="d-inline-block mr-3"><img
                             src="/static/images/listing/testimonial-1.png"
                             alt="testimonial"
-                            class="rounded-circle"
-                          />
+                            class="rounded-circle" />
                         </a>
                         <div class="media-body lh-14 font-size-sm">
                           They specialize in makgeolli at this Korean-style pub
@@ -619,17 +558,15 @@ page_title }} {% endblock %} {% block content %}
                       </div>
                     </div>
                     <div
-                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom"
-                    >
+                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom">
                       <div class="border-top pt-3">
                         <span class="d-inline-block mr-1">
                           <i class="fal fa-map-marker-alt"></i>
                         </span>
                         <a
                           href="#"
-                          class="text-secondary pr-3 text-decoration-none address"
-                          >92 Halsey St, Brooklyn, NY</a
-                        >
+                          class="text-secondary pr-3 text-decoration-none address">92
+                          Halsey St, Brooklyn, NY</a>
                       </div>
                     </div>
                   </div>
@@ -641,12 +578,10 @@ page_title }} {% endblock %} {% block content %}
                         <img
                           src="/static/images/shop/popular-place-1.jpg"
                           alt="store 1"
-                          class="card-img-top rounded-0"
-                        />
+                          class="card-img-top rounded-0" />
                       </a>
                       <div
-                        class="image-content position-absolute d-flex align-items-center"
-                      >
+                        class="image-content position-absolute d-flex align-items-center">
                         <div class="content-right ml-auto d-flex">
                           <a
                             href="/static/images/shop/full-popular-place-1.jpg"
@@ -654,8 +589,7 @@ page_title }} {% endblock %} {% block content %}
                             data-toggle="tooltip"
                             data-placement="top"
                             title="Quick view"
-                            data-gtf-mfp="true"
-                          >
+                            data-gtf-mfp="true">
                             <svg class="icon icon-expand">
                               <use xlink:href="#icon-expand"></use>
                             </svg>
@@ -665,34 +599,27 @@ page_title }} {% endblock %} {% block content %}
                             class="item marking"
                             data-toggle="tooltip"
                             data-placement="top"
-                            title="Bookmark"
-                            ><i class="fal fa-bookmark"></i
-                          ></a>
+                            title="Bookmark"><i class="fal fa-bookmark"></i></a>
                         </div>
                       </div>
                     </div>
                     <div class="card-body pb-4 border-right border-left">
                       <a
                         href="listing-details-full-image.html"
-                        class="card-title h5 text-dark d-inline-block mb-2"
-                        ><span class="letter-spacing-25"
-                          >Japan Rice Mixed Seafood</span
-                        ></a
-                      >
+                        class="card-title h5 text-dark d-inline-block mb-2"><span
+                          class="letter-spacing-25">Japan Rice Mixed
+                          Seafood</span></a>
                       <ul
-                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap"
-                      >
+                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                         <li class="list-inline-item">
-                          <span class="badge badge-success mr-1 d-inline-block"
-                            >5.0</span
-                          ><span class="number">4 rating</span>
+                          <span
+                            class="badge badge-success mr-1 d-inline-block">5.0</span><span
+                            class="number">4 rating</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
-                          <span class="mr-1">From</span
-                          ><span class="text-danger font-weight-semibold"
-                            >$9.0</span
-                          >
+                          <span class="mr-1">From</span><span
+                            class="text-danger font-weight-semibold">$9.0</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
@@ -700,12 +627,10 @@ page_title }} {% endblock %} {% block content %}
                         </li>
                       </ul>
                       <div class="media">
-                        <a href="#" class="d-inline-block mr-3"
-                          ><img
+                        <a href="#" class="d-inline-block mr-3"><img
                             src="/static/images/listing/testimonial-1.png"
                             alt="testimonial"
-                            class="rounded-circle"
-                          />
+                            class="rounded-circle" />
                         </a>
                         <div class="media-body lh-14 font-size-sm">
                           Overlooking Bloomsbury’s Russell Square and a 2
@@ -715,17 +640,15 @@ page_title }} {% endblock %} {% block content %}
                       </div>
                     </div>
                     <div
-                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom"
-                    >
+                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom">
                       <div class="border-top pt-3">
                         <span class="d-inline-block mr-1">
                           <i class="fal fa-map-marker-alt"></i>
                         </span>
                         <a
                           href="#"
-                          class="text-secondary pr-3 text-decoration-none address"
-                          >534 Salem Rd St, Newark, NY</a
-                        >
+                          class="text-secondary pr-3 text-decoration-none address">534
+                          Salem Rd St, Newark, NY</a>
                       </div>
                     </div>
                   </div>
@@ -737,12 +660,10 @@ page_title }} {% endblock %} {% block content %}
                         <img
                           src="/static/images/shop/popular-place-2.jpg"
                           alt="store 1"
-                          class="card-img-top rounded-0"
-                        />
+                          class="card-img-top rounded-0" />
                       </a>
                       <div
-                        class="image-content position-absolute d-flex align-items-center"
-                      >
+                        class="image-content position-absolute d-flex align-items-center">
                         <div class="content-right ml-auto d-flex">
                           <a
                             href="/static/images/shop/full-popular-place-2.jpg"
@@ -750,8 +671,7 @@ page_title }} {% endblock %} {% block content %}
                             data-toggle="tooltip"
                             data-placement="top"
                             title="Quick view"
-                            data-gtf-mfp="true"
-                          >
+                            data-gtf-mfp="true">
                             <svg class="icon icon-expand">
                               <use xlink:href="#icon-expand"></use>
                             </svg>
@@ -761,34 +681,27 @@ page_title }} {% endblock %} {% block content %}
                             class="item marking"
                             data-toggle="tooltip"
                             data-placement="top"
-                            title="Bookmark"
-                            ><i class="fal fa-bookmark"></i
-                          ></a>
+                            title="Bookmark"><i class="fal fa-bookmark"></i></a>
                         </div>
                       </div>
                     </div>
                     <div class="card-body pb-4 border-right border-left">
                       <a
                         href="listing-details-full-image.html"
-                        class="card-title h5 text-dark d-inline-block mb-2"
-                        ><span class="letter-spacing-25"
-                          >Fruit Cake - Halsey St
-                        </span></a
-                      >
+                        class="card-title h5 text-dark d-inline-block mb-2"><span
+                          class="letter-spacing-25">Fruit Cake - Halsey St
+                        </span></a>
                       <ul
-                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap"
-                      >
+                        class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                         <li class="list-inline-item">
-                          <span class="badge badge-success mr-1 d-inline-block"
-                            >4.8</span
-                          ><span class="number">2 rating</span>
+                          <span
+                            class="badge badge-success mr-1 d-inline-block">4.8</span><span
+                            class="number">2 rating</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
-                          <span class="mr-1">From</span
-                          ><span class="text-danger font-weight-semibold"
-                            >$4.0</span
-                          >
+                          <span class="mr-1">From</span><span
+                            class="text-danger font-weight-semibold">$4.0</span>
                         </li>
                         <li class="list-inline-item separate"></li>
                         <li class="list-inline-item">
@@ -796,12 +709,10 @@ page_title }} {% endblock %} {% block content %}
                         </li>
                       </ul>
                       <div class="media">
-                        <a href="#" class="d-inline-block mr-3"
-                          ><img
+                        <a href="#" class="d-inline-block mr-3"><img
                             src="/static/images/listing/testimonial-1.png"
                             alt="testimonial"
-                            class="rounded-circle"
-                          />
+                            class="rounded-circle" />
                         </a>
                         <div class="media-body lh-14 font-size-sm">
                           They specialize in makgeolli at this Korean-style pub
@@ -810,17 +721,15 @@ page_title }} {% endblock %} {% block content %}
                       </div>
                     </div>
                     <div
-                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom"
-                    >
+                      class="card-footer rounded-0 border-top-0 pb-3 pt-0 bg-transparent border-left border-right border-bottom">
                       <div class="border-top pt-3">
                         <span class="d-inline-block mr-1">
                           <i class="fal fa-map-marker-alt"></i>
                         </span>
                         <a
                           href="#"
-                          class="text-secondary pr-3 text-decoration-none address"
-                          >534 Salem Rd St, Newark, NY</a
-                        >
+                          class="text-secondary pr-3 text-decoration-none address">534
+                          Salem Rd St, Newark, NY</a>
                       </div>
                     </div>
                   </div>
@@ -835,8 +744,7 @@ page_title }} {% endblock %} {% block content %}
               id="googleMap"
               data-google-map="true"
               class="small-map"
-              style="width: 100%; height: 240px"
-            ></div>
+              style="width: 100%; height: 240px"></div>
             <div class="button-direction position-absolute">
               <a href="#" class="btn btn-sm btn-icon-left">
                 <i class="fas fa-location-arrow"></i>
@@ -847,16 +755,13 @@ page_title }} {% endblock %} {% block content %}
               <div class="card-body px-0 py-2">
                 <ul class="list-group list-group-flush">
                   <li
-                    class="list-group-item bg-transparent d-flex text-dark px-0"
-                  >
-                    <span class="item-icon mr-3"
-                      ><i class="fal fa-map-marker-alt"></i
-                    ></span>
+                    class="list-group-item bg-transparent d-flex text-dark px-0">
+                    <span class="item-icon mr-3"><i
+                        class="fal fa-map-marker-alt"></i></span>
                     <span class="card-text">125 Mountain St, Brooklyn, NY</span>
                   </li>
                   <li
-                    class="list-group-item bg-transparent d-flex text-dark px-0"
-                  >
+                    class="list-group-item bg-transparent d-flex text-dark px-0">
                     <span class="item-icon mr-3">
                       <svg class="icon icon-telephone">
                         <use xlink:href="#icon-telephone"></use>
@@ -865,18 +770,14 @@ page_title }} {% endblock %} {% block content %}
                     <span class="card-text">(301) 453-8688</span>
                   </li>
                   <li
-                    class="list-group-item bg-transparent d-flex text-dark px-0"
-                  >
-                    <span class="item-icon mr-3"
-                      ><i class="fal fa-globe"></i
-                    ></span>
-                    <span class="card-text"
-                      ><a href="#">www.thaistaste.com</a></span
-                    >
+                    class="list-group-item bg-transparent d-flex text-dark px-0">
+                    <span class="item-icon mr-3"><i
+                        class="fal fa-globe"></i></span>
+                    <span class="card-text"><a
+                        href="#">www.thaistaste.com</a></span>
                   </li>
                   <li
-                    class="list-group-item bg-transparent d-flex text-dark px-0 pt-4"
-                  >
+                    class="list-group-item bg-transparent d-flex text-dark px-0 pt-4">
                     <div class="social-icon origin-color si-square text-center">
                       <ul class="list-inline">
                         <li class="list-inline-item si-facebook">
@@ -919,14 +820,11 @@ page_title }} {% endblock %} {% block content %}
             </div>
           </div>
           <div
-            class="card p-4 widget border-0 schedule bg-gray-06 mb-6 rounded-0"
-          >
+            class="card p-4 widget border-0 schedule bg-gray-06 mb-6 rounded-0">
             <div
-              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1"
-            >
-              <span class="text-secondary mr-3"
-                ><i class="fal fa-clock"></i
-              ></span>
+              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
+              <span class="text-secondary mr-3"><i
+                  class="fal fa-clock"></i></span>
               <span> Opening Hours</span>
             </div>
             <div class="card-body px-0 pb-0">
@@ -936,70 +834,54 @@ page_title }} {% endblock %} {% block content %}
               </div>
               <ul class="list-group list-group-flush">
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0 border-top-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Monday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0 border-top-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Monday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Tuesday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Tuesday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Wednesday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Wednesday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Thursday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Thursday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Friday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Friday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Saturday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Saturday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="text-dark font-weight-semibold mb-0"
-                    >Sunday</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="text-dark font-weight-semibold mb-0">Sunday</label>
                   <span class="text-dark ml-auto">08:00AM - 09:00PM</span>
                 </li>
               </ul>
             </div>
           </div>
           <div
-            class="card p-4 widget border-0 price-status bg-gray-06 mb-6 rounded-0"
-          >
+            class="card p-4 widget border-0 price-status bg-gray-06 mb-6 rounded-0">
             <div
-              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1"
-            >
+              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
               <span class="text-secondary mr-3">
                 <svg class="icon icon-dollar-sign">
                   <use xlink:href="#icon-dollar-sign"></use>
@@ -1010,45 +892,35 @@ page_title }} {% endblock %} {% block content %}
             <div class="card-body px-0 pb-0">
               <ul class="list-group list-group-flush">
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="font-weight-semibold text-dark mb-0"
-                    >Status</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label
+                    class="font-weight-semibold text-dark mb-0">Status</label>
                   <span class="text-green ml-auto">Ultra High End</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
-                  <label class="font-weight-semibold text-dark mb-0"
-                    >Price Range</label
-                  >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
+                  <label class="font-weight-semibold text-dark mb-0">Price
+                    Range</label>
                   <span
-                    class="text-danger font-weight-semibold font-size-md ml-auto"
-                    >$10.00 - $55.00</span
-                  >
+                    class="text-danger font-weight-semibold font-size-md ml-auto">$10.00
+                    - $55.00</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="font-italic mb-0">Own or work here?</label>
                   <a
                     href="#claim-popup"
                     class="font-weight-semibold font-size-md ml-auto text-decoration-none"
                     data-gtf-mfp="true"
-                    data-mfp-options='{"type":"inline"}'
-                    >Claim Now!</a
-                  >
+                    data-mfp-options='{"type":"inline"}'>Claim Now!</a>
                 </li>
               </ul>
             </div>
           </div>
           <div
-            class="card p-4 widget border-0 gallery bg-gray-06 rounded-0 mb-6"
-          >
+            class="card p-4 widget border-0 gallery bg-gray-06 rounded-0 mb-6">
             <div
-              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1"
-            >
+              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
               <span class="text-secondary mr-3">
                 <svg class="icon icon-ionicons_svg_md-images">
                   <use xlink:href="#icon-ionicons_svg_md-images"></use>
@@ -1058,118 +930,92 @@ page_title }} {% endblock %} {% block content %}
             </div>
             <div class="card-body px-0 pt-6 pb-3">
               <div
-                class="photo-gallery d-flex flex-wrap justify-content-between"
-              >
+                class="photo-gallery d-flex flex-wrap justify-content-between">
                 <a
                   href="/static/images/shop/full-top-store-1.jpg"
                   class="photo-item"
                   data-gtf-mfp="true"
-                  data-gallery-id="01"
-                >
+                  data-gallery-id="01">
                   <img
                     src="/static/images/listing/gallery-05.jpg"
-                    alt="Gallery 05"
-                  />
+                    alt="Gallery 05" />
                 </a>
                 <a
                   href="/static/images/listing/full-gallery-06.jpg"
                   class="photo-item"
                   data-gtf-mfp="true"
-                  data-gallery-id="01"
-                >
+                  data-gallery-id="01">
                   <img
                     src="/static/images/listing/gallery-06.jpg"
-                    alt="Gallery 06"
-                /></a>
+                    alt="Gallery 06" /></a>
                 <a
                   href="/static/images/listing/full-gallery-07.jpg"
                   class="photo-item"
                   data-gtf-mfp="true"
-                  data-gallery-id="01"
-                >
+                  data-gallery-id="01">
                   <img
                     src="/static/images/listing/gallery-07.jpg"
-                    alt="Gallery 07"
-                /></a>
+                    alt="Gallery 07" /></a>
                 <a
                   href="/static/images/listing/full-gallery-08.jpg"
                   class="photo-item"
                   data-gtf-mfp="true"
-                  data-gallery-id="01"
-                >
+                  data-gallery-id="01">
                   <img
                     src="/static/images/listing/gallery-08.jpg"
-                    alt="Gallery 08"
-                /></a>
+                    alt="Gallery 08" /></a>
               </div>
             </div>
           </div>
           <div
-            class="card p-4 widget border-0 addition-detail bg-gray-06 mb-6 rounded-0"
-          >
+            class="card p-4 widget border-0 addition-detail bg-gray-06 mb-6 rounded-0">
             <div
-              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1"
-            >
+              class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
               <span>additional details</span>
             </div>
             <div class="card-body px-0 pb-0">
               <ul class="list-group list-group-flush">
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="mb-0">Accept Card Pay</label>
-                  <span class="font-weight-semibold text-danger ml-auto"
-                    >No</span
-                  >
+                  <span
+                    class="font-weight-semibold text-danger ml-auto">No</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="mb-0">Accept Bitcoin Pay</label>
-                  <span class="font-weight-semibold text-green ml-auto"
-                    >Yes</span
-                  >
+                  <span
+                    class="font-weight-semibold text-green ml-auto">Yes</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="mb-0">Car Parking</label>
-                  <span class="font-weight-semibold text-green ml-auto"
-                    >Yes</span
-                  >
+                  <span
+                    class="font-weight-semibold text-green ml-auto">Yes</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="mb-0">Good for Kids</label>
-                  <span class="font-weight-semibold text-green ml-auto"
-                    >Yes</span
-                  >
+                  <span
+                    class="font-weight-semibold text-green ml-auto">Yes</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="mb-0">Good for Groups</label>
-                  <span class="font-weight-semibold text-green ml-auto"
-                    >Yes</span
-                  >
+                  <span
+                    class="font-weight-semibold text-green ml-auto">Yes</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0"
-                >
+                  class="list-group-item bg-transparent d-flex text-dark px-0">
                   <label class="mb-0">Smoking</label>
-                  <span class="font-weight-semibold text-danger ml-auto"
-                    >No</span
-                  >
+                  <span
+                    class="font-weight-semibold text-danger ml-auto">No</span>
                 </li>
                 <li
-                  class="list-group-item bg-transparent d-flex text-dark px-0 pt-3"
-                >
-                  <a href="#"
-                    >Show More
-                    <span class="d-inline-block ml-2"
-                      ><i class="fal fa-chevron-down"></i
-                    ></span>
+                  class="list-group-item bg-transparent d-flex text-dark px-0 pt-3">
+                  <a href="#">Show More
+                    <span class="d-inline-block ml-2"><i
+                        class="fal fa-chevron-down"></i></span>
                   </a>
                 </li>
               </ul>

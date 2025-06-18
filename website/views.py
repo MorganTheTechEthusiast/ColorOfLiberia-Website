@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import *
 
 # Create your views here.
@@ -35,6 +35,15 @@ def blog(request):
 def faq(request):
     return render(request, "faq.html")
 
-def business_details(request):
-    return render(request, "business_details.html")
+def business_details(request, business_id):
+    business = get_object_or_404(Business, id=business_id)
+   
+    # Fetch related data if needed, e.g., business hours, media, etc.
+    context = {
+        "business": business,
+        "page_title": business.name,
+    }
+
+
+    return render(request, "business_details.html", context)
 
