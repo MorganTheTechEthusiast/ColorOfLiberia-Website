@@ -69,9 +69,9 @@ class BusinessHour(models.Model):
 
 class BusinessMedia(models.Model):
     business = models.ForeignKey(Business, on_delete=models.CASCADE, related_name='media')
-    logo = models.ImageField(upload_to='business_media/logo')
-    cover = models.ImageField(upload_to='business_media/cover')
-    image = models.ImageField(upload_to='business_media/')
+    logo = models.ImageField(upload_to='business_media/logo', blank=True, null=True)
+    cover = models.ImageField(upload_to='business_media/cover', blank=True, null=True)
+    image = models.ImageField(upload_to='business_media/', blank=True, null=True)
     is_featured = models.BooleanField(default=False)
 
     def __str__(self):
